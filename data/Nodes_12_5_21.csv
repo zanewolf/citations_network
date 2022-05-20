@@ -1,0 +1,118 @@
+﻿name,id,group
+"R. L. Wernli, ""AUVs-the maturity of the technology,"" Seattle, WA, USA, 1999.",Wernli_1999,Robot
+"N. Kato, ""Control performance in the horizontal plane of a fish robot with mechanical pectoral fins,"" IEEE Journal of Oceanic Engineering, vol. 25, pp. 121-129, 2000",Kato_2000,Robot
+"S. Saimek and P. Y. Li, ""Motion planning and control of a swimming machine,"" International Journal of Robotics Research, vol. 23, pp. 27- 53, 2004.",Saimek_Li_2004,Robot
+"M. A. MacIver, E. Fontaine, and J. W. Burdick, ""Designing future underwater vehicles: Principles and mechanisms of the weakly electric fish,"" IEEE Journal of Oceanic Engineering, vol. 29, pp. 651-659, 2004",MacIver_etal_2004,Robot
+"N. E. Leonard, ""Control synthesis and adaptation for an underactuated autonomous underwater vehicle,"" IEEE Journal of Oceanic Engineering, vol. 20, pp. 211-220, 1995",Leonard_1995,Robot
+"P. Y. Li and S. Saimek, ""Modeling and estimation of hydrodynamic potentials,"" in Proceedings of the IEEE Conference on Decision and Control, Phoenix, Arizona, USA, vol. 4, pp. 3253-3258, 1999.",Li_Saimek_1999,Misc
+"K. H. Low and A. Willy, ""Biomimetic motion planning of an undulating robotic fish fin,"" JVC/Journal of Vibration and Control, vol. 12, pp. 1337-1359, 2006.",Low_Willy_2006,Robot
+"""How ships’ traffic noise affects whales in a shipping channel,"" May 2003",Unknown_2003,Misc
+"C. M. Breder, ""The locomotion of fishes,"" Zoologica, vol. 4, pp. 159-297, 1926",Breder_1929,Fish
+"C. C. Lindsey, Form, function and locomotory habits in fish, vol. VII Locomotion. New York: Academic Press, 1978.",Lindsey_1978,Fish
+"Y. Y. G. Taguchi, Y. Wu, Taguchi Methods: Design of Experiments: American Supplier Institute, 1993",Taguchi_Wu_1993,Misc
+"M. Sfakiotakis, D. M. Lane, and J. B. C. Davies, ""Review of fish swimming modes for aquatic locomotion,"" IEEE Journal of Oceanic Engineering, vol. 24, pp. 237-252, 1999.",Sfakiotakis_etal_1999,Fish
+"J. J. Magnuson, ""Locomotion by scombrid fishes: Hydromechanics, morphology and behavior,"" Fish Physiology, vol. 7, pp. 239-313, 1978",Magnuson_1978,Fish
+"Chong, C. W., Zhong, Y., Zhou, C. L., Low, K. H., Gerald Seet, G. L., & Lim, H. B. (2009). Can the swimming thrust of BCF biomimetics fish be enhanced? 2008 IEEE International Conference on Robotics and Biomimetics, ROBIO 2008, 437–442. https://doi.org/10.1109/ROBIO.2009.4913043",Chong_etal_2009,Robot
+"Carlton J, Aldwinkle J and Anderson J 2013 Future Ship Powering Options: Exploring Alternative Methods of Ship Propulsion (London: Royal Academy of Engineering)",Carlton_etal_2013,Misc
+"Du R, Li Z, Youcef-Toumi K and Valdivia y Alvarado P (ed) 2015 Robot Fish ( Springer Tracts in Mechanical Engineering) (Berlin: Springer)",Du_etal_2015,Robot
+"van Ginneken V, Antonissen E, Müller U K, Booms R, Eding E, Verreth J and van den Thillart G 2005 Eel migration to the sargasso: remarkably high swimming efficiency and low energy costs J. Exp. Biol. 208 1329–35",van_Ginneken_etal_2005,Fish
+Vorus W S and Taravella B M 2011 Anguilliform fish propulsion of highest hydrodynamic efficiency J. Mar. Sci. Appl. 10 163,Vorus_Taravella_2011,Fish
+Barrett D S 1988 Propulsive efficiency of robotuna PhD Thesis Massachusetts Institute of Technology,Barrett_1988,Robot
+McIsaac K A and Ostrowski J P 2002 Experiments in closed- loop control for an underwater eel-like robot Proc. IEEE Int. Conf. on Robotics and Automation (Cat. No.02CH37292) (IEEE) vol 1 pp 750–5,McIsaac_Ostrowski_2002,Robot
+"Westphal A, Rulkov N F, Ayers J, Brady D and Hunt M 2011 Controlling a lamprey-based robot with an electronic nervous system Smart Struct. Syst. 8 39–52",Westphal_etal_2011,Robot
+"Stefanini C et al 2012 A novel autonomous, bioinspired swimming robot developed by neuroscientists and bioengineers Bioinspiration Biomimetics 7 025001",Stefanini_etal_2012,Robot
+"Liljeback P, Stavdahl O, Pettersen K Y and Gravdahl J T 2014 Mamba—a waterproof snake robot with tactile sensing In {IEEE}/{RSJ} Inte. Conf. on Intelligent Robots and Systems (Institute of Electrical & Electronics Engineers) (IEEE) (https://doi.org/10.1109/IROS.2014.6942575)",Liljeback_etal_2014,Robot
+"Crespi A, Badertscher A, Guignard A and Ijspeert A J 2005 AmphiBot I: an amphibious snake-like robot Robot. Auton. Syst. 50 163–75",Crespi_etal_2005,Robot
+Crespi A and Ijspeert A J 2006 AmphiBot II: an amphibious snake robot that crawls and swims using a central pattern generator Int. Conf. Climbing and Walking Robots (CLAWAR 2006) pp 19–27,Crespi_Ijspeert_2006,Robot
+"Porez M, Boyer F and Ijspeert A J 2014 Improved Lighthill fish swimming model for bio-inspired robots: modeling, computational aspects and experimental comparisons Int. J. Robot. Res. 33 1322–41",Porez_etal_2014,Robot
+"Yu S, Ma S, Li B and Wang Y 2009 An amphibious snake-like robot: design and motion experiments on ground and in water Int. Conf. on Information and Automation (IEEE) pp 500–5",Yu_etal_2009,Robot
+Manfredi L et al 2013 A bioinspired autonomous swimming robot as a tool for studying goal-directed locomotion Biol. Cybern. 107 513–27,Manfredi_etal_2014,Robot
+"Bayat B, Crespi A and Ijspeert A 2016 Envirobot: a bio- inspired environmental monitoring platform IEEE/OES Conf. Autonomous Underwater Vehicles (Tokyo, Japan) (https://doi. org/10.1109/AUV.2016.7778700)",Bayat_etal_2016,Robot
+Williams T M 1989 Swimming by sea otters: adaptations for low energetic cost locomotion J. Comparative Physiol. A 164 815–24,Williams_1989,Misc
+Nicolas G and Bideau B 2009 A kinematic and dynamic comparison of surface and underwater displacement in high level monofin swimming Hum. Mov. Sci. 28 480–93,Nicolas_Bideau_2009,Misc
+"Zarrouk D, Mann M, Degani N, Yehuda T, Jarbi N and Hess A 2016 Single actuator wave-like robot (SAW): design, modeling, and experiments Bioinspiration Biomimetics 11 046004",Zarrouk_etal_2016,Robot
+"Leftwich M C, Tytell E D, Cohen A H and Smits A J 2012 Wake structures behind a swimming robotic lamprey with a passively flexible tail J. Exp. Biol. 215 416–25",Leftwich_etal_2012,Robot
+"Maurya P, Aguiar A P and Pascoal A 2009 Marine vehicle path following using inner-outer loop control IFAC Proc. Volumes (8th IFAC Conf. on Manoeuvring and Control of Marine Craft) vol 42 pp 38–43",Maurya_etal_2009,Misc
+"Paschal T 2017 Undulatory swimming versus propeller based Technical Report BioRob, EPFL",Paschal_2017,Misc
+"Struebig, K., Bayat, B., Eckert, P., Looijestijn, A., Lueth, T. C., & Ijspeert, A. J. (2020). Design and development of the efficient anguilliform swimming robot-MAR. Bioinspiration and Biomimetics, 15(3), 035001. https://doi.org/10.1088/1748-3190/ab6be0",Struebig_etal_2020,Robot
+"Taylor, G. K., Nudds, R. L., and Thomas, A. L., 2003, “Flying and Swimming Animals Cruise at a Strouhal Number Tuned for High Power Efficiency,” Nature, 425(6959), pp. 707–711",Taylor_etal_2003,Fish
+"Lighthill, M. J., 2006, “Note on the Swimming of Slender Fish,” J. Fluid Mech., 9(2), p. 305",Lighthill_2006,Fish
+"Anderson, J. M., and Chhabra, N. K., 2002, “Maneuvering and Stability Per- formance of a Robotic Tuna,” Integr. Comp. Biol., 42(1), pp. 118–126.",Anderson_Chhabra_2002,Robot
+"Zhong, Y., Li, Z., and Du, R., 2018, “Robot Fish With Two-DOF Pectoral Fins and a Wire-Driven Caudal Fin,” Adv. Rob., 32(1), pp. 25–36",Zhong_etal_2018a,Robot
+"Liu, J., and Hu, H., 2010, “Biological Inspiration: From Carangiform Fish to Multi-Joint Robotic Fish,” J. Bionic Eng., 7(1), pp. 35–48",Liu_Hu_2010,Robot
+"y Alvarado, P. V., and Youcef-Toumi, K., 2003, “Modeling and Design Meth- odology of an Efficient Underwater Propulsion System,” Robotics and Applica- tions, Salzburg, Austria, June 25–27, pp. 161–166",y_Alvadaro_Youcef-Toumi_2003,Robot
+"Zhong, Y., Du, R., and Chiu, P. W., 2015, “Tadpole Endoscope: A Wireless Micro Robot Fish for Examining the Entire Gastrointestinal (GI) Tract,” HKIE Trans., 22(2), pp. 117–122",Zhong_etal_2003,Robot
+"Paxton, J. R., Eschmeyer, W. N., and Kirshner, D., 1998, Encyclopedia of Fishes, Academic Press, Singapore.",Paxton_etal_1998,Fish
+"Lauder, G. V., Anderson, E. J., Tangorra, J., and Madden, P. G., 2007, “Fish Biorobotics: Kinematics and Hydrodynamics of Self-Propulsion,” J. Exp. Biol., 210(Pt 16), pp. 2767–2780",Lauder_etal_2007,Robot
+"Anderson, J., Streitlien, K., Barrett, D., and Triantafyllou, M., 1998, “Oscillating Foils of High Propulsive Efficiency,” J. Fluid Mech., 360, pp. 41–72",Anderson_etal_1998,Robot
+"Wen, L., and Lauder, G., 2013, “Understanding Undulatory Locomotion in Fishes Using an Inertia-Compensated Flapping Foil Robotic Device,” Bioinspi- ration Biomimetics, 8(4), p. 046013",Wen_Lauder_2013,Robot
+"Zhong, Y., Song, J., Yu, H., and Du, R., 2018, “Towards a Transform Method From Lighthill Fish Swimming Model to Biomimetic Robot Fish,” IEEE Rob. Autom. Lett., 3(3), pp. 2632–2639.",Zhong_etal_2018b,Robot
+"Lauder, G. V., Lim, J., Shelton, R., Witt, C., Anderson, E., and Tangorra, J. L., 2011, “Robotic Models for Studying Undulatory Locomotion in Fishes,” Mar. Technol. Soc. J., 45(4), pp. 41–55.",Lauder_etal_2011,Robot
+"Wardle, C., Videler, J., and Altringham, J., 1995, “Tuning in to Fish Swimming Waves: Body Form, Swimming Mode and Muscle Function,” J. Exp. Biol., 198(Pt 8), pp. 1629–1636.",Wardler_etal_1995,Fish
+"Triantafyllou, M., Triantafyllou, G., and Yue, D., 2000, “Hydrodynamics of Fishlike Swimming,” Annu. Rev. Fluid Mech., 32(1), pp. 33–53",Triantafyllou_etal_2000,Fish
+"Lauder, G. V., and Tytell, E. D., 2005, “Hydrodynamics of Undulatory Propulsion,” Fish Physiol., 23, pp. 425–468",Lauder_Tytell_2005,Fish
+"Hover, F., Haugsdal, Ø., and Triantafyllou, M., 2004, “Effect of Angle of Attack Profiles in Flapping Foil Propulsion,” J. Fluids Struct., 19(1), pp. 37–47.",Hover_etal_2004,Robot
+"Lu, K., Xie, Y., and Zhang, D., 2013, “Numerical Study of Large Amplitude, Nonsinusoidal Motion and Camber Effects on Pitching Airfoil Propulsion,” J. Fluids Struct., 36, pp. 184–194",Lu_etal_2013,Robot
+"Long, J., Koob, T., Irving, K., Combie, K., Engel, V., Livingston, N., Lammert, A., and Schumacher, J., 2006, “Biomimetic Evolutionary Analysis: Testing the Adaptive Value of Vertebrate Tail Stiffness in Autonomous Swimming Robots,” J. Exp. Biol., 209(23), pp. 4732–4746",Long_etal_2006,Robot
+"Liu, J.-D., and Hu, H., 2006, “Biologically Inspired Behaviour Design for Autonomous Robotic Fish,” Int. J. Autom. Comput., 3(4), pp. 336–347.",Liu_Hu_2006,Robot
+"Zhong, Y., and Du, R., 2016, “Design and Implementation of a Novel Robot Fish With Active and Compliant Propulsion Mechanism,” Robotics: Science and Systems, Ann Arbor, MI, June 18–22, Paper No. 11",Zhong_Du_2016,Robot
+"Zhong, Y., and Du, R., 2016, “Parametric Study of the Swimming Performance of a Novel Robot Fish With Active Compliant Propulsion Mechanism,” ASME Paper No. DETC2016-60575",Zhong_Du_2016b,Robot
+"Zhong, Y., Li, Z., and Du, R., 2017, “A Novel Robot Fish With Wire-Driven Active Body and Compliant Tail,” IEEE/ASME Trans. Mechatronics, 22(4), pp. 1633–1643",Zhong_etal_2017,Robot
+"Newman, J., and Wu, T., 1973, “A Generalized Slender-Body Theory for Fish- like Forms,” J. Fluid Mech., 57(4), pp. 673–693",Newman_Wu_1973,Fish
+"Epps, B. P., Valdivia y Alvarado, P., Youcef-Toumi, K., and Techet, A. H., 2009, “Swimming Performance of a Biomimetic Compliant Fish-like Robot,” Exp. Fluids, 47(6), pp. 927–939.",Epps_etal_2009,Robot
+"Fossen, T. I., 1994, Guidance and Control of Ocean Vehicles, Wiley, New York",Fossen_1994,Misc
+"Hoerner, S. F., and Borst, H. V., 1985, Fluid-Dynamic Lift: Practical Informa- tion on Aerodynamic and Hydrodynamic Lift, Hoerner Fluid Dynamics, Van- couver, WA",Hoerner_Bost_1985,Misc
+"Pedley, T., and Hill, S., 1999, “Large-Amplitude Undulatory Fish Swimming: Fluid Mechanics Coupled to Internal Mechanics,” J. Exp. Biol., 202(23), pp. 3431–3438.",Pedley_Hill_1999,Fish
+"Journ?ee, J., and Massie, W., 2000, Offshore Hydromechanics, TU Delft, Delft, The Netherlands.",Journee_Massie_2000,Misc
+"Bainbridge, R., 1958, “The Speed of Swimming of Fish as Related to Size and to the Frequency and Amplitude of the Tail Beat,” J. Exp. Biol., 35(1), pp. 109–133.",Bainbridge_1958,Fish
+"Videler, J., and Wardle, C., 1991, “Fish Swimming Stride by Stride: Speed Limits and Endurance,” Rev. Fish Biol. Fisheries, 1(1), pp. 23–40",Videler_Wardle_1991,Fish
+"Kaya, M., and Tuncer, I. H., 2007, “Nonsinusoidal Path Optimization of a Flap- ping Airfoil,” AIAA J., 45(8), pp. 2075–2082.",Kaya_Tuncer_2007,Robot
+"Clapham, R. J., and Hu, H., 2015, “iSplash: Realizing Fast Carangiform Swim- ming to Outperform a Real Fish,” Robot Fish, Springer, Berlin, pp. 193–218.",Clapham_Hu_2015,Robot
+"El Daou, H., Salumae, T., Chambers, L. D., Megill, W. M., and Kruusmaa, M., 2014, “Modelling of a Biologically Inspired Robotic Fish Driven by Compliant Parts,” Bioinspiration Biomimetics, 9(1), p. 016010.",El_Daou_etal_2014,Robot
+"Chowdhury, A. R., Kumar, V., Prasad, B., Kumar, R., and Panda, S., 2014, “Model-Based Control of a Bcf Mode Carangiform Bioinspired Robotic Fish,” Mar. Technol. Soc. J., 48(4), pp. 36–50",Chowdhury_etal_2014,Robot
+"Anderson, E. J., Mcgillis, W. R., and Grosenbaugh, M. A., 2001, “The Bound- ary Layer of Swimming Fish,” J. Exp. Biol., 204(Pt 1), pp. 81–102.",Anderson_etal_2001,Fish
+"Tytell, E. D., 2004, “Kinematics and Hydrodynamics of Linear Acceleration in Eels, Anguilla Rostrata,” Proc. R. Soc. London B: Biol. Sci., 271(1557), pp. 2535–2540.",Tytell_2004,Fish
+"Zhong, Y., Song, J., Yu, H., & Du, R. (2018). A study on kinematic pattern of fish undulatory locomotion using a robot fish. Journal of Mechanisms and Robotics, 10(4), 041013–1. https://doi.org/10.1115/1.4040434",Zhong_etal_2018c,Robot
+"K. Streitlien, G. S. Triantafyllou, and M. S. Triantafyllou, “Efficient foil propulsion through vortex control,” AIAA Journal, Vol. 34, 1996, pages 2315–2319",Streitlien_etal_1996,Robot
+"S. Guo, T. Fukuda, Norihiko KATO, Keisuke OGURO. “Development of Underwater Microrobot Using ICPF Actuator”. Proceedings of the IEEE International Conference on Robotics and Automation, May 1998, pages 1829-1834.",Guo_etal_1998,Robot
+"J.J. Videler, “Fish Swimming”, London, UK: Chapman & Hall.1993. pages 121.",Videler_1993,Fish
+"Igor L. Y. Spierts, Johan L. Van Leeuwen. “Kinematics and muscle dynamics of C- and S-starts of carp(syprinus carpio L.)”. Journal of Experimental Biology, 202, 1999, pages 393-406",Igor_etal_1999,Fish
+"J. Liu and H. Hu, Building a 3D Simulator for Autonomous Navigation of Robotic Fishes, Proceedings of IEEE/RSJ Int. Conf. on Intelligent Robots and Systems, Sendai International Centre, Sendai, Japan, 28 Sept. - 2 Oct. 2004, pages 613-618",Liu_Hu_2004,Robot
+"J.Z. Yu, etc. A simplified Propulsive Model of Biomimetic Robot Fish and Its Realization. IEEE Transactions on Systems, Man and Cybernetics Part B: Cybernetics, Vol. 34, No. 4, 2004, pages 1798- 1810",Yu_etal_2004b,Robot
+"E.G. Drucker and G.V. Lauder. Wake dynamics and fluid forces of turning maneuvers in sunfish. Journal of Experimental Biology, 204, 2001, pages 431-442",Drucker_Lauder_2001,Fish
+"Liu, J., & Hu, H. (2005). Mimicry of Sharp Turning Behaviours in a Robotic Fish. Proceedings of the 2005 IEEE International Conference on Robotics and Automation Barcelona, Spain, April 2005.",Liu_Hu_2005,Robot
+"J. Yu, L. Wang and M. Tan, Geometric optimization of relative link lengths for biomimetic robotic fish, IEEE Trans. Robot. 23 (2007) 382–386",Yu_etal_2007,Robot
+"C. Zhou, M. Tan, Z. Cao, S. Wang, D. Creighton, N. Gu and S. Nahavandi, Kinematic modeling of a bio-inspired robotic fish, IEEE Int. Conf. Robotics and Automation, 2008. ICRA 2008, May 2008, pp. 695–699.",Zhou_etal_2008,Robot
+"Y. Zhang, J. He and K. H. Low, Parametric study of an underwater finned propulsor inspired by bluespotted ray, J. Bionic Eng. 9 (2012) 166–176",Zhang_etal_2012,Robot
+"Y. Zhang, J. He and G. Zhang, Measurement on morphology and ki- nematics of crucian vertebral joints, J. Bionic Eng. 8 (2011) 10–17.",Zhang_etal_2011,Fish
+"P. L. Nguyen, V. P. Do and B. R. Lee, Dynamic modeling and experi- ment of a fish robot with a flexible tail fin, J. Bionic Eng. 10 (2013) 39–45",Nguyen_etal_2013,Fish
+"M. J. Lighthill, Aquatic animal propulsion of high hydromechanical efficiency, J. Fluid Mech. 44 (1970) 265–301",Lighthill_1970,Fish
+"M. J. Lighthill, Large-amplitude elongated-body theory of fish loco- motion, Proc. R. Soc. Lond. B, Biol. Sci. 179 (1055) (1971) 125–138",Lighthill_1971,Fish
+"J. Z. Yu, M. Tan, S. Wang and E. Chen, Development of a biomimetic robotic fish and its control algorithm, IEEE Trans. Syst., Man, Cybern. B, Cybern. 34 (2004) 1798–1810",Yu_etal_2004,Robot
+"K. A. Morgansen, V. Duidam, R. J. Mason, J. W. Burdick and R. M. Murray, Nonlinear control methods for planar carangiform robot fish locomotion, in IEEE Int. Conf. Robotics and Automation, 2001. Proc. 2001 ICRA, Vol. 1 (2001), pp. 427–434",Morgansen_etal_2001,Robot
+"K. A. Morgansen, P. A. Vela and J. W. Burdick, Trajectory stabilization for a planar carangiform robot fish, in IEEE Int. Conf. Robotics and Automation, 2002. Proc. ICRA'02, Vol. 1 (2002), pp. 756–762.",Morgansen_etal_2002,Robot
+"K. A. Morgansen, B. I. Triplett and D. J. Klein, Geometric methods for modeling and control of free-swimming fin-actuated underwater vehicles, IEEE Trans. Robot. 23 (2007) 1184–1199",Morgansen_etal_2007,Robot
+"F. Boyer, M. Porez and W. Khalil, Macro-continuous computed torque algorithm for a three-dimensional eel-like robot, IEEE Trans. Robot. 22 (2006) 763–775.",Boyger_etal_2006,Robot
+"M. Sfakiotakis and D. P. Tsakiris, Biomimetic centering for undulatory robots, Int. J. Robot. Res. 26 (2007) 1267–1282.",Sfakiotakis_Tsakiris_2007,Robot
+"J. Yu, L. Wang, J. Shao and M. Tan, Control and coordination of multiple biomimetic robotic fish, IEEE Trans. Control Syst. Tech. 15(1) (2007) 176–183.",Yu_etal_2007b,Robot
+"Z. Su, J. Yu, M. Tan and J. Zhang, Closed-loop precise turning control for a bcf-mode robotic fish, 2010 IEEE/RSJ Int. Conf. Intelligent Robots and Systems (IROS) (2010), pp. 946–951",Su_etal_2010,Robot
+"J. Yu, M. Wang, Z. Su, M. Tan and J. Zhang, Dynamic modeling and its application for a cpg-coupled robotic fish, 2011 IEEE Int. Conf. Robotics and Automation (ICRA), 2011, pp. 159–164",Yu_etal_2011,Robot
+"K. A. McIsaac and J. P. Ostrowski, Open-loop verification of motion planning for an underwater eel-like robot, 7th Int. Symp. Experi- mental Robotics,11–13 December, 2000, pp. 271–280",McIsaac_Ostrowski_2000,Robot
+"J. Yu, L. Liu, L. Wang, M. Tan and D. Xu, Turning control of a multilink biomimetic robotic fish, IEEE Trans. Robot. 24 (2008) 201–206",Yu_etal_2008,Robot
+"K. H. Low, C. Zhou and Y. Zhong, Gait planning for steady swimming control of biomimetic fish robots, Adv. Robot. 23(7–8) (2009) 805– 829.",Low_etal_2009,Robot
+"K. A. McIsaac and J. P. Ostrowski, Motion planning for anguilliform locomotion, IEEE Trans. Robot. Autom. 19 (2003) 637–652.",McIsaac_Ostrowski_2003,Fish
+"A. J. Ijspeert, Central pattern generators for locomotion control in animals and robots: A review, Neural Netw. 21 (2008) 642–653.",Ijspeet_2008,Robot
+"J. Colgate and K. Lynch, Mechanics and control of swimming: A re- view, IEEE J. Ocean. Eng. 29 (2004) 660–673",Colgate_Lynch_2004,Fish
+"J. J. Craig Introduction to Robotics: Mechanics and Control (Addison- Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1989).",Craig_1989,Robot
+"Y.-L. Yang, P. Chao and C.-K. Sung, Landing posture control for a generalized twin-body system using methods of inputcoutput line- arization and computed torque, IEEE/ASME Trans. Mechatronics 14(3) (2009) 326–336",Yang_Sung_2009,Misc
+"J. Slotine and W. Li, Applied Nonlinear Control (Prentice Hall, 1991",Slotine_Li_1991,Misc
+"W. Cao and J. Xu, Nonlinear integral-type sliding surface for both matched and unmatched uncertain systems, IEEE Trans. Autom. Control 49 (2004) 1355–1360.",Cao_Xu_2004,Misc
+"A. Smith, F. Mobasser and K. Hashtrudi-Zaad, Neural-network-based contact force observers for haptic applications, IEEE Trans. Robot. 22 (2006) 1163–1175",Smith_etal_2006,Misc
+"F. Hoppensteadt and E. Izhikevich, Weakly Connected Neural Net- works, Applied Mathematical Sciences, No. 126 (Springer, 1997)",Hoppensteadt_Izhikevich_1997,Misc
+"J. Yu, M. Wang, W. Wang, M. Tan and J. Zhang, Design and control of a fish-inspired multimodal swimming robot, 2011 IEEE Int. Conf. Ro- botics and Automation (ICRA), May 2011, pp. 3664–3669",Yu_etal_2011b,Robot
+"K. Seo, S.-J. Chung and J.-J. E. Slotine, CPG-based control of a turtle- like underwater vehicle, Autonom. Robots 28 (2010) 247–269",Keo_etal_2010,Robot
+"Y. Hu, W. Tian, J. Liang and T. Wang, Learning fish-like swimming with a cpg-based locomotion controller, 2011 IEEE/RSJ Int. Conf. Intelligent Robots and Systems (IROS), Septmeber 2011, pp. 1863– 1868",Hu_etal_2011,Robot
+"A. Crespi and A. Ijspeert, Online optimization of swimming and crawling in an amphibious snake robot, IEEE Trans. Robot. 24 (2008) 75–87",Crespi_Ijspeert_2008,Robot
+"J.-X. Xu and W. Wang, A general internal model approach for motion learning, IEEE Trans. Syst., Man, Cybern. B, Cybern. 38 (2008) 477– 487",Xu_Wang_2008,Misc
+"K. D'Aout and P. Aerts, A kinematic comparison of forward and backward swimming in the eel Anguilla anguilla, J. Exp. Biol. 202 (1999) 1511–1521",DAout_Aerts_1999,Fish
+"Niu, X., & Xu, J. (2014). Modeling, Control and Locomotion Planning of an Anguilliform Robotic Fish. Unmanned Systems, 02(04), 295–321. http://www.worldscientific.com/doi/abs/10.1142/S230138501440007X",Niu_Xu_2014,Robot

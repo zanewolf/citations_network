@@ -1,0 +1,5424 @@
+[
+  {
+    "RecordKey": "White2021:Tunabot_Flex",
+    "Title": "Tunabot Flex: a tuna-inspired robot with body flexibility improves high-performance swimming",
+    "Year": 2021,
+    "CitationKey": "White2021",
+    "Journal": "Bioinspiration & Biomimetics",
+    "Keywords": "tuna,biomimetic robots,locomotion,kinematics,energetics",
+    "Study Focus": "Swimming Kinematics,Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Tunabot_Flex",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "25.5",
+        "Width (cm)": "4.8",
+        "Height(cm)": "6.9",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "0.19",
+        "Joint Number": "2-4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "Tunabot_Flex",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Tunabot_Flex",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "25.5",
+        "Width (cm)": "4.8",
+        "Height(cm)": "6.9",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "0.19",
+        "Joint Number": "2-4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Power/Efficiency/Energetics",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "COM, Duty Cycle, Re , Flow Speed, Tail Amplitude, Frequency, Swimming Speed",
+    "Measured Variables": "Drag Force, Drag Coefficient, Head Amplitude, COT, Stride Length, Strouhal Number, WPM",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "COM",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "BL",
+        "Value": "0.32",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Duty Cycle",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "%",
+        "Value": "15",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Duty Cycle",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "%",
+        "Value": "60",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Re ",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "",
+        "Value": "50000",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Re ",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "",
+        "Value": "320000",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Flow Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Flow Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "1.2",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Force",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Force",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.25",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Coefficient",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "",
+        "Value": "0.017",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Coefficient",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.028",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.07",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.11",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.26",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.30",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "1.9",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "8.0",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "4.1",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "25.7",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.3",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.63",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.3",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "4.6",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "",
+        "Value": "0.46",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.78",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "WPM",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/m",
+        "Value": "0.8",
+        "Source": "White2021",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "WPM",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/m",
+        "Value": "4.6",
+        "Source": "White2021",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Robots,Fish",
+    "Non-measured Components": "COM,Stride Length,Strouhal Number,Yaw,Buoyancy",
+    "Data Collection Methods": "High Speed Videography,Midlines,Force/Torque Transducer"
+  },
+  {
+    "RecordKey": "White2021:Fish",
+    "Title": "Tunabot Flex: a tuna-inspired robot with body flexibility improves high-performance swimming",
+    "Year": 2021,
+    "CitationKey": "White2021",
+    "Journal": "Bioinspiration & Biomimetics",
+    "Keywords": "tuna,biomimetic robots,locomotion,kinematics,energetics",
+    "Study Focus": "Swimming Kinematics,Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "White2021:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "100",
+        "Mass (kg)": "",
+        "Sample Size": ""
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "White2021:Yellowfin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "White2021:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "100",
+        "Mass (kg)": "",
+        "Sample Size": ""
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady,Acceleration,Power/Efficiency/Energetics",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Tail Amplitude, Head Amplitude",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.19",
+        "Source": "White2021",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "3",
+        "Source": "White2021",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "10",
+        "Source": "White2021",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.05",
+        "Source": "White2021",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Robots,Fish",
+    "Non-measured Components": "COM,Stride Length,Strouhal Number,Buoyancy",
+    "Data Collection Methods": "High Speed Videography,Midlines,Force/Torque Transducer"
+  },
+  {
+    "RecordKey": "Tunabot2019:Tunabot",
+    "Title": "Tuna robotics A high-frequency experimental platform exploring the performance space of swimming fishes",
+    "Year": 2019,
+    "CitationKey": "Tunabot2019",
+    "Journal": "Science Robotics",
+    "Keywords": "tuna,biomimetic robots,locomotion,swimming",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Tunabot",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "25.53",
+        "Width (cm)": "4.92",
+        "Height(cm)": "6.78",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "0.306",
+        "Joint Number": "2",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "Tunabot",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Tunabot",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "25.53",
+        "Width (cm)": "4.92",
+        "Height(cm)": "6.78",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "0.306",
+        "Joint Number": "2",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Power/Efficiency/Energetics",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Head Amplitude, Tail Amplitude, Stride Length, Thrust, Swimming Speed, COT, Strouhal Number",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.05",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.15",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.21",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.32",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.045",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "3.25",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "3.5",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "15",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.8",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "3.2",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "12.74",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "29.08",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "",
+        "Value": "0.4",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "1.3",
+        "Source": "Tunabot2019",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "Stride Length,Strouhal Number,Angle of Attack ,Buoyancy",
+    "Data Collection Methods": "High Speed Videography,PIV,Midlines,Force/Torque Transducer"
+  },
+  {
+    "RecordKey": "Fujiwara2017:FWCarangiform",
+    "Title": "Development offishlike robot that imitates carangiform and subcarangiform swimming motions",
+    "Year": 2017,
+    "CitationKey": "Fujiwara2017",
+    "Journal": "Journal of Aero Aqua Biomechanisms",
+    "Keywords": "Fishlike robot,Biomimetic robot,Carangiform swimming motion,Subcarangiform swimming motion,Swimming mechanism,Slender-body theory",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FWCarangiform",
+        "Model": "Japanese Horse Mackerel",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "34.4",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Partial Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".597",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FWCarangiform",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FWCarangiform",
+        "Model": "Japanese Horse Mackerel",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "34.4",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Partial Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".597",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Acceleration",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Tail Amplitude, Head Amplitude, Thrust, Energy Consumption, Swimming Speed, COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "2.9",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "16",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "8",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "15",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "3",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "7.5",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.2",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "1.25",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "W",
+        "Value": "3",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "W",
+        "Value": "20.4",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.2",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.58",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.58",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.69",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "25.1",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "58.91",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Swimming Number",
+    "Data Collection Methods": "High Speed Videography,Onboard Computer"
+  },
+  {
+    "RecordKey": "Fujiwara2017:FWSubcarangiform-Full",
+    "Title": "Development offishlike robot that imitates carangiform and subcarangiform swimming motions",
+    "Year": 2017,
+    "CitationKey": "Fujiwara2017",
+    "Journal": "Journal of Aero Aqua Biomechanisms",
+    "Keywords": "Fishlike robot,Biomimetic robot,Carangiform swimming motion,Subcarangiform swimming motion,Swimming mechanism,Slender-body theory",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FWSubcarangiform-Full",
+        "Model": "Crucian Carp",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "42.7",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".826",
+        "Joint Number": "4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FWSubcarangiform-Full",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FWSubcarangiform-Full",
+        "Model": "Crucian Carp",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "42.7",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".826",
+        "Joint Number": "4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Acceleration",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Thrust, Acceleration, Swimming Speed, Energy Consumption, COT, Head Amplitude, Tail Amplitude",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "4.0",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "6.7",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.95",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Acceleration",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s/s",
+        "Value": "0.05",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "1.4",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.4",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.5",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.94",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.17",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "W",
+        "Value": "20",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "W",
+        "Value": "40",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "60.5",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "97",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "6",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "14",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "26",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "28",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Acceleration",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s/s",
+        "Value": "0.125",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Swimming Number",
+    "Data Collection Methods": "High Speed Videography,Onboard Computer"
+  },
+  {
+    "RecordKey": "Fujiwara2017:FWSubcarangiform-Aft",
+    "Title": "Development offishlike robot that imitates carangiform and subcarangiform swimming motions",
+    "Year": 2017,
+    "CitationKey": "Fujiwara2017",
+    "Journal": "Journal of Aero Aqua Biomechanisms",
+    "Keywords": "Fishlike robot,Biomimetic robot,Carangiform swimming motion,Subcarangiform swimming motion,Swimming mechanism,Slender-body theory",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FWSubcarangiform-Aft",
+        "Model": "Crucian Carp",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "42.7",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".826",
+        "Joint Number": "4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FWSubcarangiform-Aft",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FWSubcarangiform-Aft",
+        "Model": "Crucian Carp",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "42.7",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": ".826",
+        "Joint Number": "4",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Acceleration",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Thrust, Swimming Speed, Energy Consumption, COT, Head Amplitude, Tail Amplitude, Acceleration",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "6.1",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "8.9",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.9",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "1.65",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.4",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.6",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.94",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.41",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "W",
+        "Value": "20",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Energy Consumption",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "W",
+        "Value": "35",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "60.5",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "70.6",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "5",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "6",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm",
+        "Value": "20",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm",
+        "Value": "24",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Acceleration",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s/s",
+        "Value": "0.15",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Acceleration",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s/s",
+        "Value": "0.08",
+        "Source": "Fujiwara2017",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Swimming Number",
+    "Data Collection Methods": "High Speed Videography,Onboard Computer"
+  },
+  {
+    "RecordKey": "Dewar1994a:Fish",
+    "Title": "Studies of Tropical Tuna Swimming Performance in a Large Water Tunnel. I. Energetics",
+    "Year": 1994,
+    "CitationKey": "Dewar1994a",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "tuna,Thunnus albacares,Euthynnus affinis,Katsuwonus pelamis,metabolic rate,cost of transport,energetics",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Physiological Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Dewar1994a:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "51",
+        "Mass (kg)": "2",
+        "Sample Size": "9"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Dewar1994a:Yellowfin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Dewar1994a:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "51",
+        "Mass (kg)": "2",
+        "Sample Size": "9"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady,Power/Efficiency/Energetics",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "2.26",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "3.98",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "25",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "150",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": ".49",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "2.94",
+        "Source": "Dewar1994a",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry,Flow Speed"
+  },
+  {
+    "RecordKey": "Dewar1994b:Fish",
+    "Title": "Studies of tropical tuna swimming performance in a large water tunnel . III . Kinematics",
+    "Year": 1994,
+    "CitationKey": "Dewar1994b",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "tuna,Thunnus albacares,locomotion,swimming mechanics,kinematics,thunniform",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Physiological Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Dewar1994b:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "32",
+        "Mass (kg)": "",
+        "Sample Size": ""
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Dewar1994b:Yellowfin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Dewar1994b:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "32",
+        "Mass (kg)": "",
+        "Sample Size": ""
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Power/Efficiency/Energetics,Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Tail Amplitude, Wavelength, Frequency, Stride Length",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "10",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "130",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "1/BL",
+        "Value": "0.167",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "1/BL",
+        "Value": "0.21",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Wavelength",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "1/BL",
+        "Value": "1.06",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Wavelength",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "1/BL",
+        "Value": "1.50",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "1.5",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "4.4",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "1/BL",
+        "Value": "0.21",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "1/BL",
+        "Value": "0.73",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Wavelength",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "1/BL",
+        "Value": "1.23",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Wavelength",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "1/BL",
+        "Value": "1.29",
+        "Source": "Dewar1994b",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Yaw,Amplitude,Sweepback Angle",
+    "Data Collection Methods": "High Speed Videography"
+  },
+  {
+    "RecordKey": "Blank2007_BF:Fish",
+    "Title": "Influence of Swimming Speed on Metabolic Rates of Juvenile Pacific Bluefin Tuna and Yellowfin Tuna",
+    "Year": 2007,
+    "CitationKey": "Blank2007_BF",
+    "Journal": "Physiological and Biochemical Zoology: Ecology and Evolutionary Approaches",
+    "Keywords": "tuna,swimming,metabolism",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Physiological Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Blank2007_BF:Bluefin Tuna",
+        "Species": "Thunnus orientalis",
+        "Common name": "Bluefin Tuna",
+        "Length (cm)": "74",
+        "Mass (kg)": "8.3",
+        "Sample Size": "6"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Blank2007_BF:Bluefin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Blank2007_BF:Bluefin Tuna",
+        "Species": "Thunnus orientalis",
+        "Common name": "Bluefin Tuna",
+        "Length (cm)": "74",
+        "Mass (kg)": "8.3",
+        "Sample Size": "6"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady,Power/Efficiency/Energetics",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Frequency, Stride Length, COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.75",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.8",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "1.53",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "3.12",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.46",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.59",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "1.23",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "1.6",
+        "Source": "Blank2007_BF",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry,High Speed Videography"
+  },
+  {
+    "RecordKey": "Blank2007_YF:Fish",
+    "Title": "Influence of Swimming Speed on Metabolic Rates of Juvenile Pacific Bluefin Tuna and Yellowfin Tuna",
+    "Year": 2007,
+    "CitationKey": "Blank2007_YF",
+    "Journal": "Physiological and Biochemical Zoology: Ecology and Evolutionary Approaches",
+    "Keywords": "tuna,swimming,metabolism",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Physiological Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Blank2007_YF:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "67",
+        "Mass (kg)": "5.4",
+        "Sample Size": "5"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Blank2007_YF:Yellowfin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Blank2007_YF:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "67",
+        "Mass (kg)": "5.4",
+        "Sample Size": "5"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady,Power/Efficiency/Energetics",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Frequency, Stride Length, COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.55",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.8",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "1.4",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "2.65",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.42",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.72",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "1.10",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "1.8",
+        "Source": "Blank2007_YF",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry,High Speed Videography"
+  },
+  {
+    "RecordKey": "Katzschmann2018:SoFi",
+    "Title": "Exploration of underwater life with an acoustically controlled soft robotic fish",
+    "Year": 2018,
+    "CitationKey": "Katzschmann2018",
+    "Journal": "Science Robotics",
+    "Keywords": "soft robotic fish,biomimetic model,autonomous underwater vehicle",
+    "Study Focus": "Robotic Development,Control Mechanisms",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "SoFi",
+        "Model": "",
+        "Robot Type": "Soft",
+        "Swimming Mode": "",
+        "Length (cm)": "47",
+        "Width (cm)": "23",
+        "Height(cm)": "18",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Pelvic Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "1.6",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Fluidic Elastomer Actuator",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "SoFi",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "SoFi",
+        "Model": "",
+        "Robot Type": "Soft",
+        "Swimming Mode": "",
+        "Length (cm)": "47",
+        "Width (cm)": "23",
+        "Height(cm)": "18",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Pelvic Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "1.6",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Fluidic Elastomer Actuator",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Turning,Diving",
+    "Testing Location": "Static Pool,Pond/Lake/Ocean",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, Turning Speed, Turning Radius",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.9",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1.4",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "cm/s",
+        "Value": "23.5",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL/s",
+        "Value": "0.5",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "cm/s",
+        "Value": "18.3",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Radius",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "cm/s",
+        "Value": "78.2",
+        "Source": "Katzschmann2018",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "Dive Pitch,Depth,Diving Speed",
+    "Data Collection Methods": ""
+  },
+  {
+    "RecordKey": "Leftwich2012:Robotic_Lamprey",
+    "Title": "Wake structures behind a swimming robotic lamprey with a passively flexible tail",
+    "Year": 2012,
+    "CitationKey": "Leftwich2012",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "flexibility,thrust production,anguilliform swimming,hydrodynamics,lamprey,Slender-body theory",
+    "Study Focus": "Fluid Dynamics,Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Robotic_Lamprey",
+        "Model": "Lamprey",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "114",
+        "Width (cm)": "3.8",
+        "Height(cm)": "9.7",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "11",
+        "Actuator Number": "13",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "Robotic_Lamprey",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Robotic_Lamprey",
+        "Model": "Lamprey",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "114",
+        "Width (cm)": "3.8",
+        "Height(cm)": "9.7",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "11",
+        "Actuator Number": "13",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Re , Frequency, Strouhal Number, Swimming Speed",
+    "Measured Variables": "Thrust, Lateral Force",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Re ",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "",
+        "Value": "85000",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.1",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "0.63",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "",
+        "Value": "0.55",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.75",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.055",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.115",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.0025",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.001",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Lateral Force",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.03",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Lateral Force",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.04",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.048",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.101",
+        "Source": "Leftwich2012",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Wake,Flexural Stiffness,Resonant Frequency,Newton/meter,Momentum flux per meter,Turbulence Intensity",
+    "Data Collection Methods": "PIV"
+  },
+  {
+    "RecordKey": "Gibouin2018:Flexible_Robotic_Fish",
+    "Title": "Study of the thrust-drag balance with a swimming robotic fish",
+    "Year": 2018,
+    "CitationKey": "Gibouin2018",
+    "Journal": "Physics of Fluids",
+    "Keywords": "robotics,fluid dynamics,drag,thrust production",
+    "Study Focus": "Fluid Dynamics,Robotic Development",
+    "Use": "Computational Model Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Flexible_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Soft",
+        "Swimming Mode": "",
+        "Length (cm)": "17",
+        "Width (cm)": "",
+        "Height(cm)": "6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Flexible_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Flexible_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Soft",
+        "Swimming Mode": "",
+        "Length (cm)": "17",
+        "Width (cm)": "",
+        "Height(cm)": "6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency, Swimming Speed",
+    "Measured Variables": "Tail Amplitude, Thrust, Drag Force, Drag Coefficient, Strouhal Number",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.2",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1.6",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "cm ",
+        "Value": "1",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm ",
+        "Value": "8",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.08",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Force",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Force",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.027",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Drag Coefficient",
+        "Context": "Measured",
+        "Type": "Fixed",
+        "Units": "",
+        "Value": "0.19",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "",
+        "Value": "",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.042",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.104",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.247",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.6118",
+        "Source": "Gibouin2018",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish,Robots,Model",
+    "Non-measured Components": "",
+    "Data Collection Methods": "High Speed Videography,Force/Torque Transducer"
+  },
+  {
+    "RecordKey": "Donley2000_KT:Fish",
+    "Title": "SWIMMING KINEMATICS OF JUVENILE KAWAKAWA TUNA ( EUTHYNNUS AFFINIS ) AND CHUB MACKEREL ( SCOMBER JAPONICUS )",
+    "Year": 2000,
+    "CitationKey": "Donley2000_KT",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "locomotion,swimming,kinematics,Scombridae,chub mackerel,\"Scomber japonicus, juvenile, kawakawa tuna, Euthynnus affinis, thunniform, carangiform",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Donley2000_KT:Kawakawa Tuna",
+        "Species": "Euthynnus affinis",
+        "Common name": "Kawakawa Tuna",
+        "Length (cm)": "15-25.5",
+        "Mass (kg)": ".043-.265",
+        "Sample Size": "10"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Donley2000_KT:Kawakawa Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Donley2000_KT:Kawakawa Tuna",
+        "Species": "Euthynnus affinis",
+        "Common name": "Kawakawa Tuna",
+        "Length (cm)": "15-25.5",
+        "Mass (kg)": ".043-.265",
+        "Sample Size": "10"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Frequency, Tail Amplitude",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": ".4",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "1",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "4.57",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "7.03",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "%",
+        "Value": "12",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "%",
+        "Value": "14.5",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "cm ",
+        "Value": "1.8",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm ",
+        "Value": "3.7",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "2.67",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "3.922",
+        "Source": "Donley2000_KT",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": ""
+  },
+  {
+    "RecordKey": "Donley2000_CM:Fish",
+    "Title": "SWIMMING KINEMATICS OF JUVENILE KAWAKAWA TUNA ( EUTHYNNUS AFFINIS ) AND CHUB MACKEREL ( SCOMBER JAPONICUS )",
+    "Year": 2000,
+    "CitationKey": "Donley2000_CM",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "locomotion,swimming,kinematics,Scombridae,chub mackerel,\"Scomber japonicus, juvenile, kawakawa tuna, Euthynnus affinis, thunniform, carangiform",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Donley2000_CM:Chub Mackerel",
+        "Species": "Scomber Japonicus",
+        "Common name": "Chub Mackerel",
+        "Length (cm)": "14-23.4",
+        "Mass (kg)": ".026-.147",
+        "Sample Size": "8"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Donley2000_CM:Chub Mackerel",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Donley2000_CM:Chub Mackerel",
+        "Species": "Scomber Japonicus",
+        "Common name": "Chub Mackerel",
+        "Length (cm)": "14-23.4",
+        "Mass (kg)": ".026-.147",
+        "Sample Size": "8"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Frequency, Tail Amplitude",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": ".4",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": ".9",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "6.57",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "%",
+        "Value": "20.5",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm ",
+        "Value": "4.8",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "3.82",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "%",
+        "Value": "14",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "cm ",
+        "Value": "1.96",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "2.86",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "3.85",
+        "Source": "Donley2000_CM",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": "High Speed Videography,Midlines,Respirometry"
+  },
+  {
+    "RecordKey": "Sepulveda2000_KT:Fish",
+    "Title": "Maximum sustainable speeds and cost of swimming in juvenile Kawakawa Tuna ( Euthynnus affinis ) and Chub Mackerel ( Scomber japonicus )",
+    "Year": 2000,
+    "CitationKey": "Sepulveda2000_KT",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "locomotion,endothermy,Scombridae,chub mackerel,tuna,juvenile,Scomber japonicus,kawakawa,cost of transport,standard metabolic rate,sustained swimming,swimming efficiency,energetics,respirometer,Euthynnus affinis",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Sepulveda2000_CM:Chub Mackerel",
+        "Species": "Scomber Japonicus",
+        "Common name": "Chub Mackerel",
+        "Length (cm)": "13.3-25",
+        "Mass (kg)": ".026-.144",
+        "Sample Size": "13"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Sepulveda2000_CM:Chub Mackerel",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Sepulveda2000_CM:Chub Mackerel",
+        "Species": "Scomber Japonicus",
+        "Common name": "Chub Mackerel",
+        "Length (cm)": "13.3-25",
+        "Mass (kg)": ".026-.144",
+        "Sample Size": "13"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "45",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "3.37",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "110",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "5.08",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "4.92",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "23.68",
+        "Source": "Sepulveda2000_KT",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry"
+  },
+  {
+    "RecordKey": "Sepulveda2000_CM:Fish",
+    "Title": "Maximum sustainable speeds and cost of swimming in juvenile Kawakawa Tuna ( Euthynnus affinis ) and Chub Mackerel ( Scomber japonicus )",
+    "Year": 2000,
+    "CitationKey": "Sepulveda2000_CM",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "locomotion,endothermy,Scombridae,chub mackerel,tuna,juvenile,Scomber japonicus,kawakawa,cost of transport,standard metabolic rate,sustained swimming,swimming efficiency,energetics,respirometer,Euthynnus affinis",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Sepulveda2000_KT:Kawakawa Tuna",
+        "Species": "Euthynnus affinis",
+        "Common name": "Kawakawa Tuna",
+        "Length (cm)": "11-25",
+        "Mass (kg)": ".024-.265",
+        "Sample Size": "11"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Sepulveda2000_KT:Kawakawa Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Sepulveda2000_KT:Kawakawa Tuna",
+        "Species": "Euthynnus affinis",
+        "Common name": "Kawakawa Tuna",
+        "Length (cm)": "11-25",
+        "Mass (kg)": ".024-.265",
+        "Sample Size": "11"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "80",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "3.8",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "120",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "5.8",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "4.52",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "15.14",
+        "Source": "Sepulveda2000_CM",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry"
+  },
+  {
+    "RecordKey": "Sepulveda2000_YF:Fish",
+    "Title": "Maximum sustainable speeds and cost of swimming in juvenile Kawakawa Tuna ( Euthynnus affinis ) and Chub Mackerel ( Scomber japonicus )",
+    "Year": 2000,
+    "CitationKey": "Sepulveda2000_YF",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "locomotion,endothermy,Scombridae,chub mackerel,tuna,juvenile,Scomber japonicus,kawakawa,cost of transport,standard metabolic rate,sustained swimming,swimming efficiency,energetics,respirometer,Euthynnus affinis",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "checked",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Sepulveda2000_YF:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "202",
+        "Mass (kg)": ".111",
+        "Sample Size": "1"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Sepulveda2000_YF:Yellowfin Tuna",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Sepulveda2000_YF:Yellowfin Tuna",
+        "Species": "Thunnus albacares",
+        "Common name": "Yellowfin Tuna",
+        "Length (cm)": "202",
+        "Mass (kg)": ".111",
+        "Sample Size": "1"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Average",
+        "Units": "cm/s",
+        "Value": "80",
+        "Source": "Sepulveda2000_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Average",
+        "Units": "BL/s",
+        "Value": "3.96",
+        "Source": "Sepulveda2000_YF",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "6.65",
+        "Source": "Sepulveda2000_YF",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Respirometry"
+  },
+  {
+    "RecordKey": "Salumae2013:FILOSE",
+    "Title": "Flow-relative control of an underwater robot",
+    "Year": 2013,
+    "CitationKey": "Salumae2013",
+    "Journal": "Proceedings of Royal Society A",
+    "Keywords": "bioinspired model,flow sensing,compliant,soft robotic fish",
+    "Study Focus": "Control Mechanisms,Fluid Dynamics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FILOSE",
+        "Model": "Rainbow Trout",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50",
+        "Width (cm)": "8.5",
+        "Height(cm)": "15.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "3.04",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FILOSE",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FILOSE",
+        "Model": "Rainbow Trout",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50",
+        "Width (cm)": "8.5",
+        "Height(cm)": "15.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "3.04",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Navigation",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Swimming Speed",
+    "Measured Variables": "Swimming Speed, Tail Amplitude, Power, COT, Frequency",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "11",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "19",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": ".22",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": ".38",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "cm ",
+        "Value": "8.06",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm ",
+        "Value": "20.54",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Power",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "W",
+        "Value": "5.5",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Power",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "W",
+        "Value": "7.8",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "12.06",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "18.2",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Fixed",
+        "Units": "Hz",
+        "Value": "2",
+        "Source": "Salumae2013",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Onboard Computer,High Speed Videography,PIV,Pressure"
+  },
+  {
+    "RecordKey": "Jezov2012:FILOSE",
+    "Title": "Sensing oscillations in unsteady flow for better robotic swimming efficiency",
+    "Year": 2012,
+    "CitationKey": "Jezov2012",
+    "Journal": "IEEE International Conference on Systems, Man, and Cybernetics",
+    "Keywords": "bioinspired model,flow sensing,compliant,soft robotic fish,phase,swimming efficiency",
+    "Study Focus": "Control Mechanisms,Fluid Dynamics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FILOSE",
+        "Model": "Rainbow Trout",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50",
+        "Width (cm)": "8.5",
+        "Height(cm)": "15.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "3.04",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FILOSE",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FILOSE",
+        "Model": "Rainbow Trout",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50",
+        "Width (cm)": "8.5",
+        "Height(cm)": "15.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "3.04",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Efficiency",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Efficiency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "%",
+        "Value": "-0.05",
+        "Source": "Jezov2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Efficiency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "%",
+        "Value": "0.48",
+        "Source": "Jezov2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "%",
+        "Value": "0.65",
+        "Source": "Jezov2012",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "Pressure,Thrust Coefficient",
+    "Data Collection Methods": "Onboard Computer,High Speed Videography,PIV,Pressure"
+  },
+  {
+    "RecordKey": "Anderson2000:VCUUV",
+    "Title": "Maneuvering and stability performance of a robotic tuna",
+    "Year": 2002,
+    "CitationKey": "Anderson2000",
+    "Journal": "Integrative and Comparative Biology",
+    "Keywords": "tuna,biomimetic model,maneuverability",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "VCUUV",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "240",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "173",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "VCUUV",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "VCUUV",
+        "Model": "Yellowfin Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "240",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "173",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Turning,Steady,Maneuverability",
+    "Testing Location": "Static Pool,Pond/Lake/Ocean",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, Turning Diameter, Yaw Rate",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "1.25",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.521",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m ",
+        "Value": "2.4",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m ",
+        "Value": "3.0",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "1",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "1.25",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Yaw Rate",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree",
+        "Value": "75",
+        "Source": "Anderson2000",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Stability,Rudder Deflection,Sideslip angle",
+    "Data Collection Methods": ""
+  },
+  {
+    "RecordKey": "ShaoXu2019:MFC_Robotic_Fish",
+    "Title": "Pitch Motion Control of a Soft Bionic Robot Fish Based on Centroid Adjustment",
+    "Year": 2019,
+    "CitationKey": "ShaoXu2019",
+    "Journal": "IEEE International Conference on Mechatronics and Automation",
+    "Keywords": "Bionic robot fish,centroid adjustment,MFC,smart material,pitch motion control,PID controller",
+    "Study Focus": "Robotic Development,Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "MFC_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "",
+        "Swimming Mode": "",
+        "Length (cm)": "34.5",
+        "Width (cm)": "4.6",
+        "Height(cm)": "8.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Macro Fiber Composite (MFC)",
+        "Robotic Subtype": "",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "MFC_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "MFC_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "",
+        "Swimming Mode": "",
+        "Length (cm)": "34.5",
+        "Width (cm)": "4.6",
+        "Height(cm)": "8.6",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Macro Fiber Composite (MFC)",
+        "Robotic Subtype": "",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Backward,Turning,Diving",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency, Turning Speed, Voltage",
+    "Measured Variables": "Swimming Speed",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "-0.282",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": ".1645",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.48",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": ".82",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "6",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "45",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Degree/s",
+        "Value": "7",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Voltage",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "V",
+        "Value": "500",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Voltage",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "V",
+        "Value": "1500",
+        "Source": "ShaoXu2019",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Pitch Angle,Displacement",
+    "Data Collection Methods": "High Speed Videography"
+  },
+  {
+    "RecordKey": "Rufo2013:GhostSwimmer",
+    "Title": "GhostSwimmer ™ : Tactically Relevant , Biomimetically Inspired , Silent , Highly Efficient and Maneuverable Autonomous Underwater Vehicle",
+    "Year": 2013,
+    "CitationKey": "Rufo2013",
+    "Journal": "",
+    "Keywords": "tuna,swimming,bioinspired model",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "GhostSwimmer",
+        "Model": "Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "160",
+        "Width (cm)": "",
+        "Height(cm)": "19",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Dorsal Fin(s), Pectoral Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "37",
+        "Joint Number": "",
+        "Actuator Number": "",
+        "Actuator Type": "",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "GhostSwimmer",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "GhostSwimmer",
+        "Model": "Tuna",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "160",
+        "Width (cm)": "",
+        "Height(cm)": "19",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Dorsal Fin(s), Pectoral Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "37",
+        "Joint Number": "",
+        "Actuator Number": "",
+        "Actuator Type": "",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Maneuverability",
+    "Testing Location": "Pond/Lake/Ocean,Flow Tank",
+    "Controlled Variables": "",
+    "Measured Variables": "Turning Diameter, Swimming Speed",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.5",
+        "Source": "Rufo2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "1",
+        "Source": "Rufo2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Knots",
+        "Value": "10",
+        "Source": "Rufo2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "5.144",
+        "Source": "Rufo2013",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "3.215",
+        "Source": "Rufo2013",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": ""
+  },
+  {
+    "RecordKey": "LauderFlammangAlben2012:Flapper_1",
+    "Title": "Passive Robotic Models of Propulsion by the Bodies and Caudal Fins of Fish",
+    "Year": 2012,
+    "CitationKey": "LauderFlammangAlben2012",
+    "Journal": "Integrative and Comparative Biology",
+    "Keywords": "passive,flapper,robotic model,caudal fin",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Flapper_1",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "25",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Caudal Fin",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Flapper_1",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Flapper_1",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "25",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Caudal Fin",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "cm/s",
+        "Value": "14",
+        "Source": "LauderFlammangAlben2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "cm/s",
+        "Value": "48",
+        "Source": "LauderFlammangAlben2012",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "Hz",
+        "Value": "2",
+        "Source": "LauderFlammangAlben2012",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "Caudal fin kinematics,Heave,Flexural Stiffness,Caudal Fin Shape",
+    "Data Collection Methods": "High Speed Videography,PIV,Midlines,Force/Torque Transducer,Flow Speed"
+  },
+  {
+    "RecordKey": "Low2010:NAF",
+    "Title": "Parametric study of the swimming performance of a fish robot propelled by a flexible caudal fin",
+    "Year": 2010,
+    "CitationKey": "Low2010",
+    "Journal": "Bioinspiration & Biomimetics",
+    "Keywords": "biomimetic model,underwater vehicle propulsion,caudal fin,undulatory,Biomimetic robots; Functional design; Oscillating fin; Underwater vehicle propulsion",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "NAF",
+        "Model": "Arowana",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "66.1",
+        "Width (cm)": "26",
+        "Height(cm)": "10",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "6.8",
+        "Joint Number": "3",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "NAF",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "NAF",
+        "Model": "Arowana",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "66.1",
+        "Width (cm)": "26",
+        "Height(cm)": "10",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "6.8",
+        "Joint Number": "3",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady,Turning",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, COT, Thrust, Turning Diameter",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.4",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "2.4",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.33",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.5",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Fixed",
+        "Units": "J/kg/m",
+        "Value": "0.15",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "-0.02",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.8",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Fixed",
+        "Units": "m ",
+        "Value": "0.2",
+        "Source": "Low2010",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Moveable Pin Position,Caudal Fin Aspect Ratio/SHape,Spring Constant (Stiffness of Tail)",
+    "Data Collection Methods": "Force/Torque Transducer"
+  },
+  {
+    "RecordKey": "Chong2009:NAF",
+    "Title": "Can the swimming thrust of BCF biomimetics fish be enhanced?",
+    "Year": 2009,
+    "CitationKey": "Chong2009",
+    "Journal": "IEEE International Conference on Robotics and Biomimetics",
+    "Keywords": "biomimetic model,underwater vehicle propulsion,caudal fin,undulatory,Biomimetic robots; Functional design; Oscillating fin; Underwater vehicle propulsion",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "NAF",
+        "Model": "Arowana",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "66.1",
+        "Width (cm)": "26",
+        "Height(cm)": "10",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "6.8",
+        "Joint Number": "3",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "NAF",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "NAF",
+        "Model": "Arowana",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "66.1",
+        "Width (cm)": "26",
+        "Height(cm)": "10",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "6.8",
+        "Joint Number": "3",
+        "Actuator Number": "1",
+        "Actuator Type": "DC Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady,Turning",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "",
+    "Measured Variables": "Thrust",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0.01",
+        "Source": "Chong2009",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "0.38",
+        "Source": "Chong2009",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera"
+  },
+  {
+    "RecordKey": "Niu2014:Anguilliform_Fish",
+    "Title": "Modeling, Control and Locomotion Planning of an Anguilliform Robotic Fish",
+    "Year": 2014,
+    "CitationKey": "Niu2014",
+    "Journal": "Unmanned Systems",
+    "Keywords": "",
+    "Study Focus": "Robotic Development",
+    "Use": "Computational Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Anguilliform_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "72",
+        "Width (cm)": "5.6",
+        "Height(cm)": "6.3",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "4",
+        "Actuator Number": "3",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Anguilliform_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Anguilliform_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "72",
+        "Width (cm)": "5.6",
+        "Height(cm)": "6.3",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "",
+        "Fins Controlled": "",
+        "Mass (kg)": "",
+        "Joint Number": "4",
+        "Actuator Number": "3",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady,Backward,Turning,Sideways,Spinning",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, Turning Diameter",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "Hz",
+        "Value": "1",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.064",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "-0.27",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.08",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.375",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m ",
+        "Value": "1.35",
+        "Source": "Niu2014",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Phase",
+    "Data Collection Methods": "Onboard Computer,Camera"
+  },
+  {
+    "RecordKey": "LiuHu2005:Turning_Robot",
+    "Title": "Mimicry of Sharp Turning Behaviours in a Robotic Fish",
+    "Year": 2005,
+    "CitationKey": "LiuHu2005",
+    "Journal": "IEEE International Conference on Robotics and Automation",
+    "Keywords": "robotic model,C-shape,turning,kinematics",
+    "Study Focus": "Robotic Development,Swimming Kinematics,Control Mechanisms",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Turning_Robot",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "80",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Pectoral Fins, Caudal Fin",
+        "Mass (kg)": "",
+        "Joint Number": "4",
+        "Actuator Number": "4",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "Turning_Robot",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Turning_Robot",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "",
+        "Length (cm)": "80",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Pectoral Fins, Caudal Fin",
+        "Mass (kg)": "",
+        "Joint Number": "4",
+        "Actuator Number": "4",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Turning",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "",
+    "Measured Variables": "Turning Speed, Turning Angle",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree/s",
+        "Value": "110",
+        "Source": "LiuHu2005",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Angle",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree",
+        "Value": "65",
+        "Source": "LiuHu2005",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Model",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Midlines,Camera"
+  },
+  {
+    "RecordKey": "LiuHu2010:Multi-Joint_Robotic_Fish",
+    "Title": "Biological inspiration: from carangiform fish to multi-joint robotic fish",
+    "Year": 2010,
+    "CitationKey": "LiuHu2010",
+    "Journal": "Journal of Bionic Engineering",
+    "Keywords": "carangiform fish,fish swimming behaviour,robotic fish,multi-joint robot",
+    "Study Focus": "Control Mechanisms",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Multi-Joint_Robotic_Fish",
+        "Model": "Carp ",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "52",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "",
+        "Joint Number": "3",
+        "Actuator Number": "3",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "Multi-Joint_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Multi-Joint_Robotic_Fish",
+        "Model": "Carp ",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "52",
+        "Width (cm)": "",
+        "Height(cm)": "",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "",
+        "Joint Number": "3",
+        "Actuator Number": "3",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady,Turning",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Head Amplitude, Tail Amplitude, Swimming Speed, Turning Angle, Turning Speed, Turning Diameter",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1.3",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.5",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Degree",
+        "Value": "34.8",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Head Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree",
+        "Value": "43.9",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Degree",
+        "Value": "24.5",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree",
+        "Value": "32.8",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.62",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.02",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Angle",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Degree",
+        "Value": "101",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Angle",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree",
+        "Value": "110",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Degree/s",
+        "Value": "105",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree/s",
+        "Value": "120",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "0.6",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL",
+        "Value": "0.62",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m ",
+        "Value": ".312",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m ",
+        "Value": "0.3224",
+        "Source": "LiuHu2010",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera,Onboard Computer"
+  },
+  {
+    "RecordKey": "Tan2006:NEMO",
+    "Title": "An Autonomous Robotic Fish for Mobile Sensing An Autonomous Robotic Fish for Mobile Sensing",
+    "Year": 2006,
+    "CitationKey": "Tan2006",
+    "Journal": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "Keywords": "flow sensing,robotic fish",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "NEMO",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "23",
+        "Width (cm)": "13",
+        "Height(cm)": "6.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": ".295",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "IPMC",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "NEMO",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "NEMO",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Thunniform",
+        "Length (cm)": "23",
+        "Width (cm)": "13",
+        "Height(cm)": "6.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": ".295",
+        "Joint Number": "1",
+        "Actuator Number": "1",
+        "Actuator Type": "IPMC",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.4",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "3.4",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "mm/s",
+        "Value": "0",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "mm/s",
+        "Value": "6.3",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": ".0063",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.027",
+        "Source": "Tan2006",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Robots",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera"
+  },
+  {
+    "RecordKey": "Zhang2010:FMC_Robotic_Fish",
+    "Title": "A biologically inspired artificial fish using flexible matrix composite actuators: analysis and experiment",
+    "Year": 2010,
+    "CitationKey": "Zhang2010",
+    "Journal": "Smart Materials and Structures",
+    "Keywords": "bioinspired model,soft robotic fish",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "FMC_Robotic_Fish",
+        "Model": "Striped Bass",
+        "Robot Type": "Soft",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "0.76",
+        "Width (cm)": "14",
+        "Height(cm)": "19",
+        "Robot Body": "Partial Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "16.8",
+        "Joint Number": "0",
+        "Actuator Number": "12",
+        "Actuator Type": "FMC",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Robot.Name": "FMC_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "FMC_Robotic_Fish",
+        "Model": "Striped Bass",
+        "Robot Type": "Soft",
+        "Swimming Mode": "Carangiform",
+        "Length (cm)": "0.76",
+        "Width (cm)": "14",
+        "Height(cm)": "19",
+        "Robot Body": "Partial Body",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "",
+        "Mass (kg)": "16.8",
+        "Joint Number": "0",
+        "Actuator Number": "12",
+        "Actuator Type": "FMC",
+        "Robotic Subtype": "Soft",
+        "Skin Covering": "TRUE"
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Thrust, Swimming Speed, Power, Efficiency, COT",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.83",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1.25",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "2",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.3",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.26",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Power",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "W",
+        "Value": "0.29",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Efficiency",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "%",
+        "Value": "53.56",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "J/kg/m",
+        "Value": "0.058",
+        "Source": "Zhang2010",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Model,Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": ""
+  },
+  {
+    "RecordKey": "Zhong2018a:Wire-driven_Robotic_Fish",
+    "Title": "A Study on Kinematic Pattern of Fish Undulatory Locomotion Using a Robot Fish",
+    "Year": 2018,
+    "CitationKey": "Zhong2018a",
+    "Journal": "Journal of Mechanisms and Robotics",
+    "Keywords": "bioinspired model,kinematics,swimming",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "31",
+        "Width (cm)": "16",
+        "Height(cm)": "7.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "0.5",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Wire-driven_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "31",
+        "Width (cm)": "16",
+        "Height(cm)": "7.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "0.5",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Thrust, Swimming Speed",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "-.01",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "2.1",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "1",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "3",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.42",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.3",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0.37",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "1.19",
+        "Source": "Zhong2018a",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Model,Robots",
+    "Non-measured Components": "Kinematic patterns,Yaw angle",
+    "Data Collection Methods": "Force/Torque Transducer,High Speed Videography,Midlines"
+  },
+  {
+    "RecordKey": "Zhong2018b:Wire-driven_Robotic_Fish_2",
+    "Title": "Implementation and depth control of an active-and-compliant propelled robot fish",
+    "Year": 2018,
+    "CitationKey": "Zhong2018b",
+    "Journal": "IEEE International Conference on Robotics and Biomimetics",
+    "Keywords": "bioinspired model,robotic fish",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish_2",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "60",
+        "Width (cm)": "21.5",
+        "Height(cm)": "14",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "4",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Wire-driven_Robotic_Fish_2",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish_2",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "60",
+        "Width (cm)": "21.5",
+        "Height(cm)": "14",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins, Dorsal Fin(s)",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "4",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Diving",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency, Tail Amplitude",
+    "Measured Variables": "Swimming Speed, Turning Diameter",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "Hz",
+        "Value": "2",
+        "Source": "Zhong2018b",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Controlled",
+        "Type": "Fixed",
+        "Units": "Degree",
+        "Value": "60",
+        "Source": "Zhong2018b",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "1.5",
+        "Source": "Zhong2018b",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL",
+        "Value": "2",
+        "Source": "Zhong2018b",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Robots",
+    "Non-measured Components": "Depth",
+    "Data Collection Methods": "High Speed Videography"
+  },
+  {
+    "RecordKey": "ZhongDu2016:Wire-driven_Robotic_Fish",
+    "Title": "Design and Implementation of a Novel Robot Fish with Active and Compliant Propulsion Mechanism",
+    "Year": 2016,
+    "CitationKey": "ZhongDu2016",
+    "Journal": "Robotics: Science and Systems",
+    "Keywords": "robotic fish,compliant",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "31",
+        "Width (cm)": "16",
+        "Height(cm)": "7.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "0.5",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Wire-driven_Robotic_Fish",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "31",
+        "Width (cm)": "16",
+        "Height(cm)": "7.5",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "Pectoral Fins",
+        "Mass (kg)": "0.5",
+        "Joint Number": "0",
+        "Actuator Number": "2",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady,Turning",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, Turning Speed, Strouhal Number, Re , Froude Efficiency",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.5",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "3.5",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": ".7",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "2.15",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Degree/s",
+        "Value": "63",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Speed",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "Degree/s",
+        "Value": "54",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.39",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Re ",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "210000",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Froude Efficiency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.86",
+        "Source": "ZhongDu2016",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Robots",
+    "Non-measured Components": "",
+    "Data Collection Methods": "High Speed Videography"
+  },
+  {
+    "RecordKey": "Xie2020:Wire-driven_Robotic_Fish_3",
+    "Title": "An Experimental Study on the Fish Body Flapping Patterns by Using a Biomimetic Robot Fish",
+    "Year": 2020,
+    "CitationKey": "Xie2020",
+    "Journal": "IEEE Robotics and Automation Letters",
+    "Keywords": "Bionic robot fish,biomimetic model,bioinspired model,body flapping patterns,cruising performances",
+    "Study Focus": "Swimming Kinematics,Control Mechanisms",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish_3",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50.6",
+        "Width (cm)": "24.8",
+        "Height(cm)": "12.8",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "1.08",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "Wire-driven_Robotic_Fish_3",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "Wire-driven_Robotic_Fish_3",
+        "Model": "",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Subcarangiform",
+        "Length (cm)": "50.6",
+        "Width (cm)": "24.8",
+        "Height(cm)": "12.8",
+        "Robot Body": "Full Body",
+        "Fins Present": "Caudal Fin, Pectoral Fins",
+        "Fins Controlled": "",
+        "Mass (kg)": "1.08",
+        "Joint Number": "0",
+        "Actuator Number": "1",
+        "Actuator Type": "Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Swimming Speed, Strouhal Number, Thrust",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.5",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "2.0",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.69",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "0.83",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "",
+        "Value": "0.69",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Strouhal Number",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "",
+        "Value": "0.97",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": ".17",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": ".35",
+        "Source": "Xie2020",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "",
+    "Non-measured Components": "Yaw angle",
+    "Data Collection Methods": "Force/Torque Transducer,Onboard Computer,High Speed Videography"
+  },
+  {
+    "RecordKey": "Struebig2020:MAR",
+    "Title": "Design and development of the efficient anguilliform swimming robot-MAR",
+    "Year": 2020,
+    "CitationKey": "Struebig2020",
+    "Journal": "Bioinspiration & Biomimetics",
+    "Keywords": "anguilliform,swimming,robot,helix,travelling wave,fish-like,bioinspired",
+    "Study Focus": "Robotic Development",
+    "Use": "Robotic Model Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "TRUE",
+    "Subject Info": [
+      {
+        "Robot.Name": "MAR",
+        "Model": "Eel",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "108",
+        "Width (cm)": "5.5",
+        "Height(cm)": "25",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "7.5",
+        "Joint Number": "15",
+        "Actuator Number": "2",
+        "Actuator Type": "DC Motor, Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Robot.Name": "MAR",
+    "Fish.Name": "",
+    "Fish_Summary": [],
+    "Robot_Summary": [
+      {
+        "Robot.Name": "MAR",
+        "Model": "Eel",
+        "Robot Type": "Hard",
+        "Swimming Mode": "Anguilliform",
+        "Length (cm)": "108",
+        "Width (cm)": "5.5",
+        "Height(cm)": "25",
+        "Robot Body": "Full Body minus fins",
+        "Fins Present": "Caudal Fin",
+        "Fins Controlled": "Caudal Fin",
+        "Mass (kg)": "7.5",
+        "Joint Number": "15",
+        "Actuator Number": "2",
+        "Actuator Type": "DC Motor, Servo Motor",
+        "Robotic Subtype": "Hard",
+        "Skin Covering": ""
+      }
+    ],
+    "Swimming Focus": "Steady,Turning,Diving",
+    "Testing Location": "Static Pool",
+    "Controlled Variables": "Frequency",
+    "Measured Variables": "Thrust, Efficiency, Speed Efficiency, Swimming Speed, COT, Turning Diameter",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Max",
+        "Units": "Hz",
+        "Value": "1.35",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Controlled",
+        "Type": "Min",
+        "Units": "Hz",
+        "Value": "0.5",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N",
+        "Value": "13.7",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Thrust",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N",
+        "Value": "0",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Efficiency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "N/W",
+        "Value": "0.02",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Efficiency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "N/W",
+        "Value": "0.19",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Speed Efficiency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/Ws",
+        "Value": "0",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Speed Efficiency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/Ws",
+        "Value": "1.48",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "m/s",
+        "Value": "0",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "m/s",
+        "Value": "0.47",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": ".44",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "J/kg/m",
+        "Value": "13.3",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "COT",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "J/kg/m",
+        "Value": "10",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "m ",
+        "Value": "1",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      },
+      {
+        "Parameter": "Turning Diameter",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.93",
+        "Source": "Struebig2020",
+        "Subject": "Robot"
+      }
+    ],
+    "Results_Comparison": "Model",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Force/Torque Transducer,Camera,Onboard Computer"
+  },
+  {
+    "RecordKey": "Bainbridge1958_CD:Fish",
+    "Title": "The speed of swimming of fish as related to size and to the frequency and amplitude of the tail beat",
+    "Year": 1958,
+    "CitationKey": "Bainbridge1958_CD",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "amplitude ,anatomy ,beat ,biology ,optics ,snout ,trout",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Bainbridge1958_CD:Common Dace",
+        "Species": "Leuciscus leuciscus",
+        "Common name": "Common Dace",
+        "Length (cm)": "3.6-24",
+        "Mass (kg)": "",
+        "Sample Size": "7"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Bainbridge1958_CD:Common Dace",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Bainbridge1958_CD:Common Dace",
+        "Species": "Leuciscus leuciscus",
+        "Common name": "Common Dace",
+        "Length (cm)": "3.6-24",
+        "Mass (kg)": "",
+        "Sample Size": "7"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "",
+    "Measured Variables": "Frequency, Swimming Speed, Tail Amplitude, Stride Length",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Beat/sec ",
+        "Value": "1",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Beat/sec ",
+        "Value": "25",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "1",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "20",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.183",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL/beat",
+        "Value": "0.63",
+        "Source": "Bainbridge1958_CD",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera,Flow Speed"
+  },
+  {
+    "RecordKey": "Bainbridge1958_T:Fish",
+    "Title": "The speed of swimming of fish as related to size and to the frequency and amplitude of the tail beat",
+    "Year": 1958,
+    "CitationKey": "Bainbridge1958_T",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "amplitude ,anatomy ,beat ,biology ,optics ,snout ,trout",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Bainbridge1958_T:Trout",
+        "Species": "Salmo irideus",
+        "Common name": "Trout",
+        "Length (cm)": "4-29.3",
+        "Mass (kg)": "",
+        "Sample Size": "4"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Bainbridge1958_T:Trout",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Bainbridge1958_T:Trout",
+        "Species": "Salmo irideus",
+        "Common name": "Trout",
+        "Length (cm)": "4-29.3",
+        "Mass (kg)": "",
+        "Sample Size": "4"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "",
+    "Measured Variables": "Frequency, Tail Amplitude, Swimming Speed, Stride Length",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Beat/sec ",
+        "Value": "3",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Beat/sec ",
+        "Value": "24",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.174",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "0.05",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "19",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL/beat",
+        "Value": "0.62",
+        "Source": "Bainbridge1958_T",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera,Flow Speed"
+  },
+  {
+    "RecordKey": "Bainbridge1958_G:Fish",
+    "Title": "The speed of swimming of fish as related to size and to the frequency and amplitude of the tail beat",
+    "Year": 1958,
+    "CitationKey": "Bainbridge1958_G",
+    "Journal": "Journal of Experimental BIology",
+    "Keywords": "amplitude ,anatomy ,beat ,biology ,optics ,snout ,trout",
+    "Study Focus": "Swimming Kinematics",
+    "Use": "Biomechanical Investigation",
+    "Hypothesis": "",
+    "Robot.Type": "FALSE",
+    "Subject Info": [
+      {
+        "Fish.Name": "Bainbridge1958_G:Goldfish",
+        "Species": "Carassius auratus",
+        "Common name": "Goldfish",
+        "Length (cm)": "4.6-22.5",
+        "Mass (kg)": "",
+        "Sample Size": "5"
+      }
+    ],
+    "Robot.Name": "",
+    "Fish.Name": "Bainbridge1958_G:Goldfish",
+    "Fish_Summary": [
+      {
+        "Fish.Name": "Bainbridge1958_G:Goldfish",
+        "Species": "Carassius auratus",
+        "Common name": "Goldfish",
+        "Length (cm)": "4.6-22.5",
+        "Mass (kg)": "",
+        "Sample Size": "5"
+      }
+    ],
+    "Robot_Summary": [],
+    "Swimming Focus": "Steady",
+    "Testing Location": "Flow Tank",
+    "Controlled Variables": "",
+    "Measured Variables": "Frequency, Swimming Speed, Stride Length, Tail Amplitude",
+    "JSON Rollup (from Values Table)": [
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "Beat/sec ",
+        "Value": "1.5",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Frequency",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "Beat/sec ",
+        "Value": "15.5",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Min",
+        "Units": "BL/s",
+        "Value": "1.25",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Swimming Speed",
+        "Context": "Measured",
+        "Type": "Max",
+        "Units": "BL/s",
+        "Value": "9.7",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Stride Length",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL/beat",
+        "Value": "0.61",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      },
+      {
+        "Parameter": "Tail Amplitude",
+        "Context": "Measured",
+        "Type": "Average",
+        "Units": "BL",
+        "Value": "0.202",
+        "Source": "Bainbridge1958_G",
+        "Subject": "Fish"
+      }
+    ],
+    "Results_Comparison": "Fish",
+    "Non-measured Components": "",
+    "Data Collection Methods": "Camera,Flow Speed"
+  }
+]

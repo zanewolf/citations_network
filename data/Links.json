@@ -1,0 +1,587 @@
+[
+  {
+    "num": 1,
+    "source": "Chong_etal_2009",
+    "target": "Wernli_1999"
+  },
+  {
+    "num": 2,
+    "source": "Chong_etal_2009",
+    "target": "Kato_2000"
+  },
+  {
+    "num": 3,
+    "source": "Chong_etal_2009",
+    "target": "Saimek_Li_2004"
+  },
+  {
+    "num": 4,
+    "source": "Chong_etal_2009",
+    "target": "MacIver_etal_2004"
+  },
+  {
+    "num": 5,
+    "source": "Chong_etal_2009",
+    "target": "Leonard_1995"
+  },
+  {
+    "num": 6,
+    "source": "Chong_etal_2009",
+    "target": "Li_Saimek_1999"
+  },
+  {
+    "num": 7,
+    "source": "Chong_etal_2009",
+    "target": "Low_Willy_2006"
+  },
+  {
+    "num": 8,
+    "source": "Chong_etal_2009",
+    "target": "Unknown_2003"
+  },
+  {
+    "num": 9,
+    "source": "Chong_etal_2009",
+    "target": "Breder_1929"
+  },
+  {
+    "num": 10,
+    "source": "Chong_etal_2009",
+    "target": "Lindsey_1978"
+  },
+  {
+    "num": 11,
+    "source": "Chong_etal_2009",
+    "target": "Taguchi_Wu_1993"
+  },
+  {
+    "num": 12,
+    "source": "Chong_etal_2009",
+    "target": "Sfakiotakis_etal_1999"
+  },
+  {
+    "num": 13,
+    "source": "Chong_etal_2009",
+    "target": "Magnuson_1978"
+  },
+  {
+    "num": 14,
+    "source": "Struebig_etal_2020",
+    "target": "Carlton_etal_2013"
+  },
+  {
+    "num": 15,
+    "source": "Struebig_etal_2020",
+    "target": "Du_etal_2015"
+  },
+  {
+    "num": 16,
+    "source": "Struebig_etal_2020",
+    "target": "Sfakiotakis_etal_1999"
+  },
+  {
+    "num": 17,
+    "source": "Struebig_etal_2020",
+    "target": "van_Ginneken_etal_2005"
+  },
+  {
+    "num": 18,
+    "source": "Struebig_etal_2020",
+    "target": "Vorus_Taravella_2011"
+  },
+  {
+    "num": 19,
+    "source": "Struebig_etal_2020",
+    "target": "Lindsey_1978"
+  },
+  {
+    "num": 20,
+    "source": "Struebig_etal_2020",
+    "target": "Barrett_1988"
+  },
+  {
+    "num": 21,
+    "source": "Struebig_etal_2020",
+    "target": "McIsaac_Ostrowski_2002"
+  },
+  {
+    "num": 22,
+    "source": "Struebig_etal_2020",
+    "target": "Westphal_etal_2011"
+  },
+  {
+    "num": 23,
+    "source": "Struebig_etal_2020",
+    "target": "Stefanini_etal_2012"
+  },
+  {
+    "num": 24,
+    "source": "Struebig_etal_2020",
+    "target": "Liljeback_etal_2014"
+  },
+  {
+    "num": 25,
+    "source": "Struebig_etal_2020",
+    "target": "Crespi_etal_2005"
+  },
+  {
+    "num": 26,
+    "source": "Struebig_etal_2020",
+    "target": "Crespi_Ijspeert_2006"
+  },
+  {
+    "num": 27,
+    "source": "Struebig_etal_2020",
+    "target": "Porez_etal_2014"
+  },
+  {
+    "num": 28,
+    "source": "Struebig_etal_2020",
+    "target": "Yu_etal_2009"
+  },
+  {
+    "num": 29,
+    "source": "Struebig_etal_2020",
+    "target": "Manfredi_etal_2014"
+  },
+  {
+    "num": 30,
+    "source": "Struebig_etal_2020",
+    "target": "Bayat_etal_2016"
+  },
+  {
+    "num": 31,
+    "source": "Struebig_etal_2020",
+    "target": "Williams_1989"
+  },
+  {
+    "num": 32,
+    "source": "Struebig_etal_2020",
+    "target": "Nicolas_Bideau_2009"
+  },
+  {
+    "num": 33,
+    "source": "Struebig_etal_2020",
+    "target": "Zarrouk_etal_2016"
+  },
+  {
+    "num": 34,
+    "source": "Struebig_etal_2020",
+    "target": "Leftwich_etal_2012"
+  },
+  {
+    "num": 35,
+    "source": "Struebig_etal_2020",
+    "target": "Maurya_etal_2009"
+  },
+  {
+    "num": 36,
+    "source": "Struebig_etal_2020",
+    "target": "Paschal_2017"
+  },
+  {
+    "num": 37,
+    "source": "Zhong_etal_2018c",
+    "target": "Taylor_etal_2003"
+  },
+  {
+    "num": 38,
+    "source": "Zhong_etal_2018c",
+    "target": "Lighthill_2006"
+  },
+  {
+    "num": 39,
+    "source": "Zhong_etal_2018c",
+    "target": "Sfakiotakis_etal_1999"
+  },
+  {
+    "num": 40,
+    "source": "Zhong_etal_2018c",
+    "target": "Anderson_Chhabra_2002"
+  },
+  {
+    "num": 41,
+    "source": "Zhong_etal_2018c",
+    "target": "Yu_etal_2004"
+  },
+  {
+    "num": 42,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_etal_2018a"
+  },
+  {
+    "num": 43,
+    "source": "Zhong_etal_2018c",
+    "target": "Liu_Hu_2010"
+  },
+  {
+    "num": 44,
+    "source": "Zhong_etal_2018c",
+    "target": "y_Alvadaro_Youcef-Toumi_2003"
+  },
+  {
+    "num": 45,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_etal_2003"
+  },
+  {
+    "num": 46,
+    "source": "Zhong_etal_2018c",
+    "target": "Paxton_etal_1998"
+  },
+  {
+    "num": 47,
+    "source": "Zhong_etal_2018c",
+    "target": "Lauder_etal_2007"
+  },
+  {
+    "num": 48,
+    "source": "Zhong_etal_2018c",
+    "target": "Anderson_etal_1998"
+  },
+  {
+    "num": 49,
+    "source": "Zhong_etal_2018c",
+    "target": "Wen_Lauder_2013"
+  },
+  {
+    "num": 50,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_etal_2018b"
+  },
+  {
+    "num": 51,
+    "source": "Zhong_etal_2018c",
+    "target": "Lauder_etal_2011"
+  },
+  {
+    "num": 52,
+    "source": "Zhong_etal_2018c",
+    "target": "Wardler_etal_1995"
+  },
+  {
+    "num": 53,
+    "source": "Zhong_etal_2018c",
+    "target": "Triantafyllou_etal_2000"
+  },
+  {
+    "num": 54,
+    "source": "Zhong_etal_2018c",
+    "target": "Lauder_Tytell_2005"
+  },
+  {
+    "num": 55,
+    "source": "Zhong_etal_2018c",
+    "target": "Hover_etal_2004"
+  },
+  {
+    "num": 56,
+    "source": "Zhong_etal_2018c",
+    "target": "Lu_etal_2013"
+  },
+  {
+    "num": 57,
+    "source": "Zhong_etal_2018c",
+    "target": "Long_etal_2006"
+  },
+  {
+    "num": 58,
+    "source": "Zhong_etal_2018c",
+    "target": "Liu_Hu_2006"
+  },
+  {
+    "num": 59,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_Du_2016"
+  },
+  {
+    "num": 60,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_Du_2016b"
+  },
+  {
+    "num": 61,
+    "source": "Zhong_etal_2018c",
+    "target": "Zhong_etal_2017"
+  },
+  {
+    "num": 62,
+    "source": "Zhong_etal_2018c",
+    "target": "Newman_Wu_1973"
+  },
+  {
+    "num": 63,
+    "source": "Zhong_etal_2018c",
+    "target": "Epps_etal_2009"
+  },
+  {
+    "num": 64,
+    "source": "Zhong_etal_2018c",
+    "target": "Fossen_1994"
+  },
+  {
+    "num": 65,
+    "source": "Zhong_etal_2018c",
+    "target": "Hoerner_Bost_1985"
+  },
+  {
+    "num": 66,
+    "source": "Zhong_etal_2018c",
+    "target": "Pedley_Hill_1999"
+  },
+  {
+    "num": 67,
+    "source": "Zhong_etal_2018c",
+    "target": "Journee_Massie_2000"
+  },
+  {
+    "num": 68,
+    "source": "Zhong_etal_2018c",
+    "target": "Bainbridge_1958"
+  },
+  {
+    "num": 69,
+    "source": "Zhong_etal_2018c",
+    "target": "Videler_Wardle_1991"
+  },
+  {
+    "num": 70,
+    "source": "Zhong_etal_2018c",
+    "target": "Kaya_Tuncer_2007"
+  },
+  {
+    "num": 71,
+    "source": "Zhong_etal_2018c",
+    "target": "Clapham_Hu_2015"
+  },
+  {
+    "num": 72,
+    "source": "Zhong_etal_2018c",
+    "target": "El_Daou_etal_2014"
+  },
+  {
+    "num": 73,
+    "source": "Zhong_etal_2018c",
+    "target": "Chowdhury_etal_2014"
+  },
+  {
+    "num": 74,
+    "source": "Zhong_etal_2018c",
+    "target": "Anderson_etal_2001"
+  },
+  {
+    "num": 75,
+    "source": "Zhong_etal_2018c",
+    "target": "Tytell_2004"
+  },
+  {
+    "num": 76,
+    "source": "Liu_Hu_2005",
+    "target": "Streitlien_etal_1996"
+  },
+  {
+    "num": 77,
+    "source": "Liu_Hu_2005",
+    "target": "Guo_etal_1998"
+  },
+  {
+    "num": 78,
+    "source": "Liu_Hu_2005",
+    "target": "Videler_1993"
+  },
+  {
+    "num": 79,
+    "source": "Liu_Hu_2005",
+    "target": "Igor_etal_1999"
+  },
+  {
+    "num": 80,
+    "source": "Liu_Hu_2005",
+    "target": "Liu_Hu_2004"
+  },
+  {
+    "num": 81,
+    "source": "Liu_Hu_2005",
+    "target": "Yu_etal_2004b"
+  },
+  {
+    "num": 82,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2007"
+  },
+  {
+    "num": 83,
+    "source": "Niu_Xu_2014",
+    "target": "Zhou_etal_2008"
+  },
+  {
+    "num": 84,
+    "source": "Niu_Xu_2014",
+    "target": "Sfakiotakis_etal_1999"
+  },
+  {
+    "num": 85,
+    "source": "Niu_Xu_2014",
+    "target": "Zhang_etal_2012"
+  },
+  {
+    "num": 86,
+    "source": "Niu_Xu_2014",
+    "target": "Zhang_etal_2011"
+  },
+  {
+    "num": 87,
+    "source": "Niu_Xu_2014",
+    "target": "Nguyen_etal_2013"
+  },
+  {
+    "num": 88,
+    "source": "Niu_Xu_2014",
+    "target": "Lighthill_1970"
+  },
+  {
+    "num": 89,
+    "source": "Niu_Xu_2014",
+    "target": "Lighthill_1971"
+  },
+  {
+    "num": 90,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2004"
+  },
+  {
+    "num": 91,
+    "source": "Niu_Xu_2014",
+    "target": "Morgansen_etal_2001"
+  },
+  {
+    "num": 92,
+    "source": "Niu_Xu_2014",
+    "target": "Morgansen_etal_2002"
+  },
+  {
+    "num": 93,
+    "source": "Niu_Xu_2014",
+    "target": "Morgansen_etal_2007"
+  },
+  {
+    "num": 94,
+    "source": "Niu_Xu_2014",
+    "target": "Boyger_etal_2006"
+  },
+  {
+    "num": 95,
+    "source": "Niu_Xu_2014",
+    "target": "Sfakiotakis_Tsakiris_2007"
+  },
+  {
+    "num": 96,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2007b"
+  },
+  {
+    "num": 97,
+    "source": "Niu_Xu_2014",
+    "target": "Su_etal_2010"
+  },
+  {
+    "num": 98,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2011"
+  },
+  {
+    "num": 99,
+    "source": "Niu_Xu_2014",
+    "target": "McIsaac_Ostrowski_2000"
+  },
+  {
+    "num": 100,
+    "source": "Niu_Xu_2014",
+    "target": "McIsaac_Ostrowski_2002"
+  },
+  {
+    "num": 101,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2008"
+  },
+  {
+    "num": 102,
+    "source": "Niu_Xu_2014",
+    "target": "Low_etal_2009"
+  },
+  {
+    "num": 103,
+    "source": "Niu_Xu_2014",
+    "target": "McIsaac_Ostrowski_2003"
+  },
+  {
+    "num": 104,
+    "source": "Niu_Xu_2014",
+    "target": "Ijspeet_2008"
+  },
+  {
+    "num": 105,
+    "source": "Niu_Xu_2014",
+    "target": "Colgate_Lynch_2004"
+  },
+  {
+    "num": 106,
+    "source": "Niu_Xu_2014",
+    "target": "Craig_1989"
+  },
+  {
+    "num": 107,
+    "source": "Niu_Xu_2014",
+    "target": "Yang_Sung_2009"
+  },
+  {
+    "num": 108,
+    "source": "Niu_Xu_2014",
+    "target": "Slotine_Li_1991"
+  },
+  {
+    "num": 109,
+    "source": "Niu_Xu_2014",
+    "target": "Cao_Xu_2004"
+  },
+  {
+    "num": 110,
+    "source": "Niu_Xu_2014",
+    "target": "Smith_etal_2006"
+  },
+  {
+    "num": 111,
+    "source": "Niu_Xu_2014",
+    "target": "Hoppensteadt_Izhikevich_1997"
+  },
+  {
+    "num": 112,
+    "source": "Niu_Xu_2014",
+    "target": "Yu_etal_2011b"
+  },
+  {
+    "num": 113,
+    "source": "Niu_Xu_2014",
+    "target": "Keo_etal_2010"
+  },
+  {
+    "num": 114,
+    "source": "Niu_Xu_2014",
+    "target": "Hu_etal_2011"
+  },
+  {
+    "num": 115,
+    "source": "Niu_Xu_2014",
+    "target": "Crespi_Ijspeert_2008"
+  },
+  {
+    "num": 116,
+    "source": "Niu_Xu_2014",
+    "target": "Xu_Wang_2008"
+  },
+  {
+    "num": 117,
+    "source": "Niu_Xu_2014",
+    "target": "DAout_Aerts_1999"
+  }
+]
