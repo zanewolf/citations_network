@@ -13,7 +13,10 @@ body {
 
 }
 
-
+.upper{
+    background-color: #999999;
+    color: white;
+}
 
 #network-graph {
     height: 100vh;

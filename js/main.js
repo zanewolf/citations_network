@@ -2,8 +2,8 @@
 let myNetwork
 
 let promises = [
-    d3.json("data/Nodes_12_6_21.json"),
-    d3.json("data/Links_12_6_21.json")
+    d3.csv("data/network_nodes_FinalWithRegex.csv"),
+    d3.csv("data/network_links_final.csv")
 ];
 
 Promise.all(promises)

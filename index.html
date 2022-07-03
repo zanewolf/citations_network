@@ -26,56 +26,61 @@
 <!--				<h3>Network of Citations</h3>-->
 <!--			</div>-->
 			<div class="flex flex-row h-full">
-				<div class="w-1/5  h-auto flex flex-column flex-nowrap border-r-4 overflow-y-scroll ">
-					<div class="text-2xl border-b-2 flex justify-center text-center p-4"> Meta-analysis Citations Network</div>
-					<div class="">
-						<div class="m-4 h-1/2 filterMenu flex flex-col flex-nowrap ">
-							<div class="font-bold uppercase flex justify-center m-auto pb-4">Filter By</div>
-<!--							<button-->
-<!--									type="button"-->
-<!--									class="btn btn-sm btn-primary"-->
-<!--									id="filterButton"-->
-<!--									onclick="filterButton()"-->
-<!--									value="false">-->
-<!--								Shared Citations-->
-<!--							</button>-->
-							<div class="checkbox">
-								<label>
-									<input id='filterButton' type="checkbox" value='false' onClick='triggerFilter("filterButton")'> Shared Citations
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input id='filterMain' type="checkbox" value=false onClick='triggerFilter("filterMain")'> Main Papers
-								</label>'
-							</div>
+				<div class="w-1/5  h-auto flex flex-column flex-nowrap border-r-4 ">
+					<div class="upper">
+						<div class="text-2xl border-b-2 flex justify-center text-center p-4 "> Meta-analysis Citations Network</div>
+						<div class="">
+							<div class="m-4 h-1/2 filterMenu flex flex-col flex-nowrap ">
+								<div class="font-bold uppercase flex justify-center m-auto pb-4">Filter By</div>
+								<!--							<button-->
+								<!--									type="button"-->
+								<!--									class="btn btn-sm btn-primary"-->
+								<!--									id="filterButton"-->
+								<!--									onclick="filterButton()"-->
+								<!--									value="false">-->
+								<!--								Shared Citations-->
+								<!--							</button>-->
+								<div class="checkbox">
+									<label>
+										<input id='filterButton' type="checkbox" value='false' onClick='triggerFilter("filterButton")'> Shared Citations
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input id='filterMain' type="checkbox" value=false onClick='triggerFilter("filterMain")'> Main Papers
+									</label>'
+								</div>
 
-							<div class="yearInputs flex flex-row nowrap">
-								<div class="header pr-4 ">Year</div>
-								<div class="form-group">
-<!--									<label for="exampleInputEmail1">By Year</label>-->
-									<input type="year" class="form-control" id="startYear" aria-describedby="yearInput" onChange="triggerFilter()">
+								<div class="yearInputs flex flex-column nowrap pt-4">
+									<div class="header text-xl flex-start m-auto">Year</div>
+									<div class="yearInputs flex flex-row flex-nowrap">
+										<div class="form-group">
+											<!--									<label for="exampleInputEmail1">By Year</label>-->
+											<input type="year" class="form-control" id="startYear" aria-describedby="yearInput" onChange="triggerFilter()">
+										</div>
+										<span class="pl-2 pr-2">  -  </span>
+										<div class="form-group">
+											<!--									<label for="exampleInputEmail1">By Year</label>-->
+											<input type="year" class="form-control" id="endYear" aria-describedby="yearInput" onChange="triggerFilter()">
+										</div>
+									</div>
+
 								</div>
-								<span class="pl-2 pr-2">  -  </span>
-								<div class="form-group">
-<!--									<label for="exampleInputEmail1">By Year</label>-->
-									<input type="year" class="form-control" id="endYear" aria-describedby="yearInput" onChange="triggerFilter()">
+								<div class = "flex justify-center m-auto">
+									<button type="button"
+											class="btn btn-sm btn-primary"
+											id="resetButton"
+											onclick="resetViz()"
+											value="false">
+										Reset
+									</button>
 								</div>
+								<!--							<div class="checkbox">-->
+								<!--								<label>-->
+								<!--									<input type="checkbox" value="false" onClick="filterMainOnly()"> Main Papers-->
+								<!--								</label>-->
+								<!--							</div>-->
 							</div>
-							<div class = "flex justify-center m-auto">
-								<button type="button"
-										class="btn btn-sm btn-primary"
-										id="resetButton"
-										onclick="resetViz()"
-										value="false">
-									Reset
-								</button>
-							</div>
-<!--							<div class="checkbox">-->
-<!--								<label>-->
-<!--									<input type="checkbox" value="false" onClick="filterMainOnly()"> Main Papers-->
-<!--								</label>-->
-<!--							</div>-->
 						</div>
 					</div>
 					<div class=" tooltip-pane border-t-2">
@@ -108,10 +113,6 @@
 	<!-- d3 -->
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus@2"></script>
-
-		<script>
-			console.log(d3plus.TextBox);
-		</script>
 
 	<!-- own js files -->
 	<script src="js/networkVis.js"></script>

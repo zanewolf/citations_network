@@ -41,7 +41,10 @@ class NetworkVis {
 
         // radius
         vis.radiusScale = d3.scaleQuantize()
-            .range([4,8,12,16])
+            .range([4,8,12,20])
+
+        vis.strokeScale=d3.scaleLinear()
+            .range([0.2,1])
 
         vis.first= true;
 
@@ -72,49 +75,62 @@ class NetworkVis {
 
         vis.count = d3.rollups(vis.links, v=>v.length,d=>d.target)
 
+        // console.log(vis.count)
+
 
 
         vis.radii=[]
         vis.mainPapers=[]
         vis.count.forEach((d,i)=>{
-            vis.citationKey=d[0]
+            // console.log(d)
+            vis.id=d[0]
             vis.value=d[1]
             // console.log(vis.value)
             vis.radii.push(vis.value)
             vis.nodes.forEach((f,i)=>{
-                f.id===vis.citationKey ? f.value = vis.value : null
+                f.id===vis.id ? f.value = vis.value : null
             })
 
             vis.links.forEach((f,i)=>{
-                f.target == vis.citationKey ? f.value = vis.value: null
+                f.target === vis.id ? f.value = vis.value: null
             })
         })
 
-        vis.nodes.forEach((d,i)=>{
-            d.Main==='checked' ? vis.mainPapers.push(d.id) : null
-        })
-        // console.log('vis.mainPapers', vis.mainPapers)
-
-        // change radius of group to be value of all its links
-        vis.nodes.forEach((d,i)=>{
-            d.group=== "Main" ? d.value = vis.value : null
-        })
-
-        // set up year filter
-        // find min year and max year, using regex \(^(19|20)\d{2}$
         vis.re= new RegExp(/(\d+)/)
 
         vis.minYear=3000
         vis.maxYear=1000
 
         vis.nodes.forEach((d,i)=>{
-            vis.minYear = Math.min(vis.minYear,d.id.match(vis.re)[0].substring(0,4))
-            vis.maxYear = Math.max(vis.maxYear,d.id.match(vis.re)[0].substring(0,4))
+            d.Main==='TRUE' ? vis.mainPapers.push(d.id) : null
+
+            vis.minYear = Math.min(vis.minYear,d.year)
+            vis.maxYear = Math.max(vis.maxYear,d.year)
+            // d.Main=== "TRUE" ? d.value = vis.value : null
         })
+        // console.log('vis.mainPapers', vis.mainPapers)
+
+        vis.strokeScale.domain([d3.min(vis.radii),d3.max(vis.radii)])
+
+        // change radius of group to be value of all its links
+        // vis.nodes.forEach((d,i)=>{
+        //
+        // })
+
+        // set up year filter
+        // find min year and max year, using regex \(^(19|20)\d{2}$
+
+
+        // vis.nodes.forEach((d,i)=>{
+        //     // console.log(d)
+        //
+        // })
 
 
         d3.select('#startYear').property('value', vis.minYear)
         d3.select('#endYear').property('value', vis.maxYear)
+
+
 
         vis.filterYears()
 
@@ -126,15 +142,24 @@ class NetworkVis {
         vis.startYear = document.getElementById('startYear').value
         vis.endYear = document.getElementById('endYear').value
 
-        vis.nodesYear = vis.nodes.filter(d=>d.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.id.match(vis.re)[0].substring(0,4) <= vis.endYear)
+        vis.nodesYear = vis.nodes.filter(d=>d.year >= vis.startYear && d.year <= vis.endYear)
+
 
         if (vis.first){
-        vis.linksYear = vis.links.filter(d=> d.source.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.match(vis.re)[0].substring(0,4) <=  vis.endYear)
+            // vis.linksYear = vis.links.filter(d=> d.source.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.match(vis.re)[0].substring(0,4) <=  vis.endYear)
             vis.first= false
+
+            console.log(vis.links)
+            vis.linksYear = vis.links.filter(d=>d.source.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.match(vis.re)[0].substring(0,4) <=  vis.endYear)
         } else {
-            vis.linksYear = vis.links.filter(d=> d.source.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.id.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.id.match(vis.re)[0].substring(0,4) <=  vis.endYear)
+            console.log(vis.links)
+            vis.linksYear = vis.links.filter(d=>d.source.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.id.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.id.match(vis.re)[0].substring(0,4) <=  vis.endYear)
 
         }
+
+        // console.log(vis.nodesYear)
+
+
 
         vis.filterShared()
     }
@@ -145,13 +170,16 @@ class NetworkVis {
         vis.shared = document.getElementById("filterButton").value;
 
         if (vis.shared == 'true'){
-            console.log(vis.shared)
-            vis.nodesShared = vis.nodesYear.filter(d=> d.value!=1 || d.Main==='checked')
+            // console.log(vis.shared)
+            vis.nodesShared = vis.nodesYear.filter(d=> d.value!=1 || d.Main==='TRUE')
             vis.linksShared = vis.linksYear.filter(d=>d.value!=1)
         } else {
             vis.nodesShared = vis.nodesYear
             vis.linksShared = vis.linksYear
         }
+        //
+        // console.log(vis.nodesShared)
+        // console.log(vis.linksShared)
 
         vis.filterMain()
 
@@ -161,15 +189,15 @@ class NetworkVis {
         let vis = this;
 
         vis.main = document.getElementById("filterMain").value
-        console.log(vis.nodesShared.length, vis.linksShared.length)
+        // console.log(vis.nodesShared.length, vis.linksShared.length)
 
         if (vis.main=='true') {
-            vis.nodesReady = vis.nodesShared.filter(d => d.Main === 'checked')
-            vis.linksReady = vis.linksShared.filter(d => {
+            vis.nodesReady = vis.nodesShared.filter(d => d.Main === 'TRUE')
+            vis.linksReady = vis.linksShared.filter((d,i) => {
                 // console.log(d)
                 if (vis.mainPapers.includes(d.target.id)) {
-                    console.log('hi')
-                    return d
+                    // console.log('hi')
+                    return (d)
                 }
             })
         } else {
@@ -177,6 +205,7 @@ class NetworkVis {
             vis.linksReady = vis.linksShared
         }
 
+        // console.log(vis.nodesReady, vis.linksReady)
         vis.updateVis()
 
 
@@ -189,17 +218,30 @@ class NetworkVis {
 
         // vis.colorScale
         //     .domain(['Fish', 'Robot', 'Misc', 'Main'])
-        vis.colorScale
-            .domain(['Main', 'Fish', 'Robot', 'Misc'])
+        // vis.colorScale
+            // .domain(['Main', 'Fish', 'Robot', 'Misc'])
+
+        console.log(vis.nodesReady)
+        vis.nodesReadySorted = vis.nodesReady.sort((a,b)=>a.value-b.value)
+        console.log(vis.nodesReadySorted)
 
         vis.radiusScale
             .domain(d3.extent(vis.radii))
 
+        vis.heightScale=d3.scaleLinear()
+            .range([vis.height-200,200])
+            .domain(d3.extent(vis.radii))
 
-        vis.simulation = d3.forceSimulation( vis.nodesReady)
-            .force("link", d3.forceLink(vis.linksReady).id(d=>d.id))
-            .force("charge", d3.forceManyBody().strength(-10))
-            .force("center", d3.forceCenter( vis.width/2,  vis.height/2).strength(1));
+
+
+        vis.simulation = d3.forceSimulation(vis.nodesReadySorted)
+            .force("link", d3.forceLink(vis.linksReady).id(d=>{return d.id}))
+            .force("charge", d3.forceManyBody().strength(-3).distanceMin(3).distanceMax(500))
+            .force("center", d3.forceCenter( vis.width/2,  vis.height/2).strength(1))
+            // .force('x', d3.forceX().x(vis.width/2).strength(.01))
+            // .force('y', d3.forceY().y(d=>vis.heightScale(d.value)))
+            .force('collision', d3.forceCollide().radius(d=>d.radius))
+            // .on('tick', vis.ticked)
 
 
         vis.link =  vis.svg
@@ -211,16 +253,16 @@ class NetworkVis {
                 update => update,
                 exit => exit.remove()
             )
-            .style("stroke-width",d=>d.value)
-            .style("stroke-width",d=>d.value)
+            .style("stroke-width",1)
+            // .style("stroke-width",d=>d.value)
             .attr("stroke", "#000000")
-            .attr("stroke-opacity", 0.3)
+            .attr("stroke-opacity", d=>vis.strokeScale(d.value))
 
 
 
         vis.node =  vis.svg
             .selectAll("circle")
-            .data( vis.nodesReady)
+            .data( vis.nodesReadySorted)
             .join(enter=>enter
                 .append('circle')
                 .raise()
@@ -229,13 +271,15 @@ class NetworkVis {
                     d3.select(this)
                         // .attr('fill', 'red')
                         .attr('stroke-width', 3)
+                        .attr('opacity', 1)
                     vis.updateTooltip(event,d)
                 })
                 .on('mouseout', function(event, d){
                     // console.log(d)
                     d3.select(this)
-                        .attr('fill', d=>vis.colorScale(d['group']))
+                        .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5")
                         .attr('stroke-width', 1)
+                        .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
                     vis.removeTooltip()
 
                 })
@@ -246,12 +290,12 @@ class NetworkVis {
                 update=>update,
                 exit=>exit.remove())
             .attr("r",  d=>vis.radiusScale(d.value))
-            .attr('fill', d=>vis.colorScale(d['group']))
+            .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5")
             .attr("stroke", "#000")
-            .attr('stroke-opacity', d=>d.group=='Main' ? 1 : 0.5)
+            .attr('stroke-opacity', d=>d.Main==="TRUE" ? 1 : 0.5)
             .attr('stroke-width', 1)
-            .attr('opacity', d=>d.group=='Main' ? 1 : 0.7)
-            .attr("z-index",-1000)// control the speed of the transition
+            .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
+            // .attr("z-index",d=>d.Main==="TRUE" ? 100 : -100)// control the speed of the transition
 
 
         // vis.textElems = vis.svg.append('g')
@@ -286,6 +330,8 @@ class NetworkVis {
             vis.linkedByIndex[`${d.source.index},${d.target.index}`] = 1;
         });
 
+        // console.log(vis.linksReady)
+
     }
 
     updateTooltip(event,d){
@@ -301,7 +347,7 @@ class NetworkVis {
         vis.tooltip
             .style("opacity", 1)
             .attr('class', ' flex flex-wrap max-w-max break-all font-bold mt-4')
-            .text(d.name)
+            .text(d.paper)
 
         vis.toolTipCB.exit().remove()
 
@@ -328,7 +374,7 @@ class NetworkVis {
                 .text('')
         }
 
-        if (d.Main==='checked'){
+        if (d.Main==='TRUE'){
 
             vis.toolTipCB
                 .append('text')
@@ -406,5 +452,22 @@ class NetworkVis {
             .on("drag", dragged)
             .on("end", dragended);
     }
+
+    ticked(){
+        let vis = this
+        vis.u = d3.select('svg')
+            .selectAll('circle')
+            .data(vis.nodesReady)
+            .join('circle')
+            .attr('r', 5)
+            .attr('cx', function(d) {
+                return d.x
+            })
+            .attr('cy', function(d) {
+                return d.y
+            });
+    }
 }
+
+
 
