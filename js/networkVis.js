@@ -40,8 +40,8 @@ class NetworkVis {
             .range(["#0ef3a0","#d5d5d5","#d5d5d5", "#d5d5d5"])
 
         // radius
-        vis.radiusScale = d3.scaleQuantize()
-            .range([4,8,12,20])
+        vis.radiusScale = d3.scaleLinear()
+            .range([3,20])
 
         vis.strokeScale=d3.scaleLinear()
             .range([0.2,1])
@@ -96,7 +96,17 @@ class NetworkVis {
             })
         })
 
+        // catch all the nodes there weren't cited by others (e.g. main papers that aren't citations in other papers)
+        vis.nodes.forEach(d=>{
+            if (d.value===undefined && d.Main==='TRUE'){
+                // console.log(d)
+                d.value=1
+            }
+        })
+
         vis.re= new RegExp(/(\d+)/)
+
+        // console.log(vis.mainPapers)
 
         vis.minYear=3000
         vis.maxYear=1000
@@ -106,26 +116,9 @@ class NetworkVis {
 
             vis.minYear = Math.min(vis.minYear,d.year)
             vis.maxYear = Math.max(vis.maxYear,d.year)
-            // d.Main=== "TRUE" ? d.value = vis.value : null
         })
-        // console.log('vis.mainPapers', vis.mainPapers)
 
         vis.strokeScale.domain([d3.min(vis.radii),d3.max(vis.radii)])
-
-        // change radius of group to be value of all its links
-        // vis.nodes.forEach((d,i)=>{
-        //
-        // })
-
-        // set up year filter
-        // find min year and max year, using regex \(^(19|20)\d{2}$
-
-
-        // vis.nodes.forEach((d,i)=>{
-        //     // console.log(d)
-        //
-        // })
-
 
         d3.select('#startYear').property('value', vis.minYear)
         d3.select('#endYear').property('value', vis.maxYear)
@@ -149,10 +142,10 @@ class NetworkVis {
             // vis.linksYear = vis.links.filter(d=> d.source.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.match(vis.re)[0].substring(0,4) <=  vis.endYear)
             vis.first= false
 
-            console.log(vis.links)
+            // console.log(vis.links)
             vis.linksYear = vis.links.filter(d=>d.source.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.match(vis.re)[0].substring(0,4) <=  vis.endYear)
         } else {
-            console.log(vis.links)
+            // console.log(vis.links)
             vis.linksYear = vis.links.filter(d=>d.source.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.source.id.match(vis.re)[0].substring(0,4) <=  vis.endYear && d.target.id.match(vis.re)[0].substring(0,4) >= vis.startYear && d.target.id.match(vis.re)[0].substring(0,4) <=  vis.endYear)
 
         }
@@ -220,10 +213,10 @@ class NetworkVis {
         //     .domain(['Fish', 'Robot', 'Misc', 'Main'])
         // vis.colorScale
             // .domain(['Main', 'Fish', 'Robot', 'Misc'])
-
-        console.log(vis.nodesReady)
+        //
+        // console.log(vis.nodesReady)
         vis.nodesReadySorted = vis.nodesReady.sort((a,b)=>a.value-b.value)
-        console.log(vis.nodesReadySorted)
+        // console.log(vis.nodesReadySorted.filter(d=>d.Main==='TRUE'))
 
         vis.radiusScale
             .domain(d3.extent(vis.radii))
@@ -234,14 +227,32 @@ class NetworkVis {
 
 
 
-        vis.simulation = d3.forceSimulation(vis.nodesReadySorted)
-            .force("link", d3.forceLink(vis.linksReady).id(d=>{return d.id}))
-            .force("charge", d3.forceManyBody().strength(-3).distanceMin(3).distanceMax(500))
+        vis.simulation = d3.forceSimulation(vis.nodesReady)
             .force("center", d3.forceCenter( vis.width/2,  vis.height/2).strength(1))
+            .force("link", d3.forceLink(vis.linksReady).id(d=>{return d.id}))
+            .force("charge", d3.forceManyBody().strength(d=>d.Main==='TRUE'? -70: -1).distanceMax(600))
+            // .force('r', d3.forceRadial(d=>d.Main==='TRUE'? 500: 100))
             // .force('x', d3.forceX().x(vis.width/2).strength(.01))
             // .force('y', d3.forceY().y(d=>vis.heightScale(d.value)))
-            .force('collision', d3.forceCollide().radius(d=>d.radius))
+            .force('collision', d3.forceCollide().radius(d=>vis.radiusScale(d.value)).strength(1))
             // .on('tick', vis.ticked)
+
+        vis.simulation.on("tick", () => {
+            vis.link
+                .attr("x1", d=> d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+            vis.node
+                // .attr("cx",  d=>d.x)
+                .attr('cx', function(d) { return d.x = Math.max((vis.radius+1), Math.min(vis.width - (vis.radius+1), d.x))})
+                .attr("cy", function(d) { return d.y = Math.max((vis.radius+1), Math.min(vis.height - (vis.radius+1), d.y))})
+            //
+            // vis.textElems
+            //     .attr("x", d => d.x + 10)
+            //     .attr("y", d => d.y)
+            //     .attr("visibility", "hidden");
+        });
 
 
         vis.link =  vis.svg
@@ -256,13 +267,13 @@ class NetworkVis {
             .style("stroke-width",1)
             // .style("stroke-width",d=>d.value)
             .attr("stroke", "#000000")
-            .attr("stroke-opacity", d=>vis.strokeScale(d.value))
+            .attr("stroke-opacity", 0.2)
 
 
 
         vis.node =  vis.svg
             .selectAll("circle")
-            .data( vis.nodesReadySorted)
+            .data( vis.nodesReady)
             .join(enter=>enter
                 .append('circle')
                 .raise()
@@ -270,30 +281,30 @@ class NetworkVis {
                     // console.log(event)
                     d3.select(this)
                         // .attr('fill', 'red')
-                        .attr('stroke-width', 3)
+                        .attr('stroke-width', 5)
                         .attr('opacity', 1)
                     vis.updateTooltip(event,d)
                 })
                 .on('mouseout', function(event, d){
                     // console.log(d)
                     d3.select(this)
-                        .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5")
+                        .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5") //"#52ff00": "#02335f") //
                         .attr('stroke-width', 1)
                         .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
                     vis.removeTooltip()
 
                 })
                 // .attr("fill", color)
-                .call(vis.drag(vis.simulation))
+                // .call(vis.drag(vis.simulation))
                 .on('mouseover.fade', vis.fade(0.1))
                 .on('mouseout.fade', vis.fade(1)),// apply a transition,
                 update=>update,
                 exit=>exit.remove())
             .attr("r",  d=>vis.radiusScale(d.value))
-            .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5")
-            .attr("stroke", "#000")
+            .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#f6f6f6")
+            .attr("stroke", "#000000")
             .attr('stroke-opacity', d=>d.Main==="TRUE" ? 1 : 0.5)
-            .attr('stroke-width', 1)
+            .attr('stroke-width', 2)
             .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
             // .attr("z-index",d=>d.Main==="TRUE" ? 100 : -100)// control the speed of the transition
 
@@ -310,20 +321,7 @@ class NetworkVis {
         //     .on('mouseover.fade', vis.fade(0.1))
         //     .on('mouseout.fade', vis.fade(1));
 
-        vis.simulation.on("tick", () => {
-            vis.link
-                .attr("x1", d=> d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-            vis.node
-                .attr("cx", function(d) { return d.x = Math.max((vis.radius+1), Math.min(vis.width - (vis.radius+1), d.x)); })
-                .attr("cy", function(d) { return d.y = Math.max((vis.radius+1), Math.min(vis.height - (vis.radius+1), d.y)); });
-            // vis.textElems
-            //     .attr("x", d => d.x + 10)
-            //     .attr("y", d => d.y)
-            //     .attr("visibility", "hidden");
-        });
+
 
         vis.linkedByIndex = {};
         vis.linksReady.forEach(d => {
@@ -413,10 +411,12 @@ class NetworkVis {
             vis.node.style('opacity', function (o) { return vis.isConnected(d, o) ? 1 : opacity });
             // vis.textElems.style('visibility', function (o) { return vis.isConnected(d, o) ? "visible" : "hidden" });
             vis.link.style('stroke-opacity', o => (o.source === d || o.target === d ? 1 : opacity));
+            vis.link.style('stroke-width', o => (o.source === d || o.target === d ? 3 : 0.5));
             if(opacity === 1){
-                vis.node.style('opacity', 1)
+                vis.node.style('opacity', d=>d.Main==='TRUE'? 1: 0.7)
                 // vis.textElems.style('visibility', 'hidden')
                 vis.link.style('stroke-opacity', 0.3)
+                vis.link.style('stroke-width',1)
 
 
             }
@@ -429,44 +429,44 @@ class NetworkVis {
         return vis.linkedByIndex[`${a.index},${b.index}`] || vis.linkedByIndex[`${b.index},${a.index}`] || a.index === b.index;
     }
 
-    drag(simulation){
-        function dragstarted(event) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            event.subject.fx = event.subject.x;
-            event.subject.fy = event.subject.y;
-        }
+    // drag(simulation){
+    //     function dragstarted(event) {
+    //         // if (!event.active) simulation.alphaTarget(0.3).restart();
+    //         event.subject.fx = event.subject.x;
+    //         event.subject.fy = event.subject.y;
+    //     }
+    //
+    //     function dragged(event) {
+    //         event.subject.fx = event.x;
+    //         event.subject.fy = event.y;
+    //     }
+    //
+    //     function dragended(event) {
+    //         // if (!event.active) simulation.alphaTarget(0.3).restart();
+    //         event.subject.fx = null;
+    //         event.subject.fy = null;
+    //     }
+    //
+    //     return d3.drag()
+    //         .on("start", dragstarted)
+    //         .on("drag", dragged)
+    //         .on("end", dragended);
+    // }
 
-        function dragged(event) {
-            event.subject.fx = event.x;
-            event.subject.fy = event.y;
-        }
-
-        function dragended(event) {
-            if (!event.active) simulation.alphaTarget(0);
-            event.subject.fx = null;
-            event.subject.fy = null;
-        }
-
-        return d3.drag()
-            .on("start", dragstarted)
-            .on("drag", dragged)
-            .on("end", dragended);
-    }
-
-    ticked(){
-        let vis = this
-        vis.u = d3.select('svg')
-            .selectAll('circle')
-            .data(vis.nodesReady)
-            .join('circle')
-            .attr('r', 5)
-            .attr('cx', function(d) {
-                return d.x
-            })
-            .attr('cy', function(d) {
-                return d.y
-            });
-    }
+    // ticked(){
+    //     let vis = this
+    //     vis.u = d3.select('svg')
+    //         .selectAll('circle')
+    //         .data(vis.nodesReady)
+    //         .join('circle')
+    //         .attr('r', 5)
+    //         .attr('cx', function(d) {
+    //             return d.x
+    //         })
+    //         .attr('cy', function(d) {
+    //             return d.y
+    //         });
+    // }
 }
 
 

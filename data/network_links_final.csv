@@ -138,6 +138,7 @@ Blank_etal_2007,Block_etal_2001
 Blank_etal_2007,Block_etal_2001_b
 Blank_etal_2007,Boggs_1991
 Blank_etal_2007,Brett_1964
+Blank_etal_2007,Block_etal_2005
 Blank_etal_2007,Brill_1979
 Blank_etal_2007,Brill_1987_b
 Blank_etal_2007,Brill_2001
@@ -222,7 +223,7 @@ CenErturk_2013,Chen_etal_2010
 CenErturk_2013,Aureli_etal_2010
 CenErturk_2013,Takagi_etal_2006
 CenErturk_2013,Chen_etal_2011
-CenErturk_2013,Chen_2011_b
+CenErturk_2013,Chen_etal_2011_b
 CenErturk_2013,Shinjo_2004
 CenErturk_2013,Wang_etal_2008
 CenErturk_2013,Wang_etal_2008_b
@@ -1202,7 +1203,7 @@ Katzschmann_etal_2018,Tan_etal_2006
 Katzschmann_etal_2018,Georgiades_etal_2004
 Katzschmann_etal_2018,Vasilescu_etal_2010
 Katzschmann_etal_2018,Behbahani_2016
-Katzschmann_etal_2018,Zhao_etal_2015
+Katzschmann_etal_2018,Zhao_etal_2015_b
 Katzschmann_etal_2018,Mazumdar_etal_2008
 Katzschmann_etal_2018,Valdivia_y_Alvarado_2005_b
 Katzschmann_etal_2018,Katz_etal_2001
@@ -1327,7 +1328,7 @@ Lauder_etal_2012,Wainwright_etal_1976
 Lauder_etal_2012,Wilga_2002
 Lauder_etal_2012,Wilga_2004
 Leftwich_etal_2012,Borazjani_2008
-Leftwich_etal_2012,Buchholz_2006
+Leftwich_etal_2012,Buchholz_2006_b
 Leftwich_etal_2012,den_Hartog_1961
 Leftwich_etal_2012,Dubois_1978
 Leftwich_etal_2012,Ferreira_2011
@@ -1536,6 +1537,7 @@ Manfredi_etal_2013,Grillner_2003
 Manfredi_etal_2013,Grillner_2006
 Manfredi_etal_2013,Grillner_etal_2007
 Manfredi_etal_2013,Hardisty_1986
+Manfredi_etal_2013,Hardisty_1971
 Manfredi_etal_2013,Hochhalter_2011
 Manfredi_etal_2013,Hu_etal_2010
 Manfredi_etal_2013,Hunter_1992
@@ -1692,6 +1694,7 @@ MojarradShahinpoor_1997,Shahinpoor_etal_1994
 MojarradShahinpoor_1997,Osada_1992
 MojarradShahinpoor_1997,Oguro_1993
 MojarradShahinpoor_1997,Asaka_etal_1995
+MojarradShahinpoor_1997,Hamlen_1965
 MojarradShahinpoor_1997,Guo_etal_1994
 MojarradShahinpoor_1997,Alexanderowicz_1963
 MojarradShahinpoor_1997,Rosen_1959
@@ -1805,7 +1808,7 @@ Rosic_etal_2017,DewarGraham_1994c
 Rosic_etal_2017,Dewey_etal_2013
 Rosic_etal_2017,DonleyDickson_2000
 Rosic_etal_2017,Drucker_2001_b
-Rosic_etal_2017,Ellerby_2001
+Rosic_etal_2017,Ellerby_etal_2000
 Rosic_etal_2017,Feilich_2015
 Rosic_etal_2017,Fierstine_1968
 Rosic_etal_2017,Gibb_etal_1999
@@ -2403,7 +2406,7 @@ Wang_etal_2012,Kato_2000
 Wang_etal_2012,Terada_2004
 Wang_etal_2012,Grillner_etal_2007
 Wang_etal_2012,Ijspeert_2008
-Wang_etal_2012,Zhou_2010
+Wang_etal_2012,Zhou_2010_b
 Wang_etal_2012,Wu_2010
 Wang_etal_2012,Cohen_etal_1982
 Wang_etal_2012,Crespi_etal_2008
@@ -2532,7 +2535,7 @@ Webb_etal_1984,Wardle_1977_b
 Webb_etal_1984,Webb_1971_b
 Webb_etal_1984,Webb_1975
 Webb_etal_1984,Webb_1976
-Webb_etal_1984,Webb_1977
+Webb_etal_1984,Webb_1977_b
 Webb_etal_1984,Webb_1984
 Webb_etal_1984,Webb_1982_c
 Webb_etal_1984,Webb_1980
@@ -2640,6 +2643,7 @@ Wen_etal_2018,Wen_etal_2013_b
 Wen_etal_2018,Ren_etal_2016
 Wen_etal_2018,JayneLauder_1995
 Wen_etal_2018,Chen_2011
+Wen_etal_2018,Chen_2011_b
 Wen_etal_2018,Drucker_2005
 Wen_etal_2018,Sfakiotakis_etal_1999
 Wen_etal_2018,Lauder_etal_2007
@@ -2666,7 +2670,7 @@ White_etal_2021,Christianson_etal_2018
 White_etal_2021,Christianson_etal_2019
 White_etal_2021,Cianchetti_etal_2015
 White_etal_2021,Curet_etal_2011_b
-White_etal_2021,Du_etal_2019
+White_etal_2021,Du_etal_2019_b
 White_etal_2021,Ertuk_2015
 White_etal_2021,Masoomi_etal_2014
 White_etal_2021,Fish_etal_2017
@@ -2998,7 +3002,7 @@ Xie_etal_2020,Zhao_etal_2009
 Xie_etal_2020,Sfakiotakis_etal_1999
 Xie_etal_2020,LiuHu_2010
 Xie_etal_2020,Chen_etal_2010
-Xie_etal_2020,Zhang_etal_2014
+Xie_etal_2020,Zhang_etal_2014_b
 Xie_etal_2020,Katzschmann_etal_2018
 Xie_etal_2020,Li_2012
 Xie_etal_2020,Li_etal_2012_b
@@ -3146,7 +3150,7 @@ Zhang_etal_2010,Sfakiotakis_etal_1999
 Zhang_etal_2010,Lauder_etal_2005
 Zhang_etal_2010,Wu_1961
 Zhang_etal_2010,Yao-Tsu_1971
-Zhang_etal_2010,Cheng_etal_1991
+Zhang_etal_2010,Cheng_1991
 Zhang_etal_2010,Lighthill_1960
 Zhang_etal_2010,Lighthill_1970
 Zhang_etal_2010,Lighthill_1969
@@ -3487,6 +3491,7 @@ Zhu_etal_2019,Lauder_etal_2011
 Zhu_etal_2019,Lauder_2015
 Zhu_etal_2019,Tangorra_etal_2010
 Zhu_etal_2019,Kahn_etal_2015
+Zhu_etal_2019,Jung_etal_2014
 Zhu_etal_2019,Leftwich_etal_2012
 Zhu_etal_2019,VidelerWardle_1991
 Zhu_etal_2019,Bainbridge_1958
@@ -3566,7 +3571,7 @@ McIsaacOstrowski_2003,McIsaac_2000
 McIsaacOstrowski_2003,Kelly_1995
 McIsaacOstrowski_2003,Leonard_1995_b
 McIsaacOstrowski_2003,Radford_1998
-McIsaacOstrowski_2003,McIsaac_2001
+McIsaacOstrowski_2003,McIsaac_2000
 McIsaacOstrowski_2003,Gray_1933
 McIsaacOstrowski_2003,Williams_1992
 McIsaacOstrowski_2003,Cohen_etal_1982
@@ -3604,11 +3609,12 @@ NiuXu_2014,Sfakiotakis_2007
 NiuXu_2014,Yu_etal_2007
 NiuXu_2014,Su_etal_2010
 NiuXu_2014,Yu_etal_2011_c
-NiuXu_2014,McIsaac_2000
+NiuXu_2014,McIsaac_2001
 NiuXu_2014,McIsaac_2002
 NiuXu_2014,Yu_etal_2008
 NiuXu_2014,Low_etal_2009
 NiuXu_2014,McIsaacOstrowski_2003
+NiuXu_2014,McIsaac_2002_b
 NiuXu_2014,Ijspeert_2008
 NiuXu_2014,Colgate_2004
 NiuXu_2014,Yang_etal_2009_b
