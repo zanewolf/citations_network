@@ -61,5 +61,10 @@ function triggerFilter(buttonToggle){
     let b= document.getElementById(buttonToggle)
     buttonToggle ? b.value = (b.value == 'true') ? 'false' : 'true' : null
 
-    myNetwork.filterYears()
+    // if (buttonToggle==='toggleColor'){
+    //     myNetwork.changeColor()
+    // } else{
+        myNetwork.filterYears()
+    // }
+
 }

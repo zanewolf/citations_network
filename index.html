@@ -28,8 +28,24 @@
 			<div class="flex flex-row h-full">
 				<div class="w-1/5  h-auto flex flex-column flex-nowrap border-r-4 ">
 					<div class="upper">
-						<div class="text-2xl border-b-2 flex justify-center text-center p-4 "> Meta-analysis Citations Network</div>
+						<div class="text-2xl border-b-2 flex justify-center text-center p-4 "> Citations Network</div>
 						<div class="">
+							<div class="m-4 h-1/4 colorBy flex flex-col flex-nowrap justify-center">
+<!--								<div class="form-check form-switch">-->
+								<div class="font-bold uppercase flex justify-center m-auto pb-4"> Color By</div>
+								<div class="flex flex-row justify-center align-center gap-2">
+									<span> Num. Cited</span>
+									<label class="toggleswitch">
+										<input type="checkbox" id= 'toggleColor' value='false' onClick='triggerFilter("toggleColor")' />
+										<span class="toggleslider" ></span>
+
+									</label>
+									<span> Main Paper</span>
+								</div>
+
+
+<!--								</div>-->
+							</div>
 							<div class="m-4 h-1/2 filterMenu flex flex-col flex-nowrap ">
 								<div class="font-bold uppercase flex justify-center m-auto pb-4">Filter By</div>
 								<!--							<button-->
@@ -111,11 +127,28 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 	<!-- d3 -->
+	<script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus@2"></script>
 
 	<!-- own js files -->
 	<script src="js/networkVis.js"></script>
 	<script src="js/main.js"></script>
+<!--	<script>-->
+<!--		var switchStatus = false;-->
+<!--		$("#toggleSwitch").on('change', function() {-->
+<!--			if ($(this).is(':checked')) {-->
+<!--				switchStatus = $(this).is(':checked');-->
+<!--				alert(switchStatus);// To verify-->
+<!--			}-->
+<!--			else {-->
+<!--				switchStatus = $(this).is(':checked');-->
+<!--				alert(switchStatus);// To verify-->
+<!--			}-->
+<!--		});-->
+<!--	</script>-->
 	</body>
 </html>

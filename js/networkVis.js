@@ -33,11 +33,23 @@ class NetworkVis {
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
         // color scheme
-        vis.colorScale = d3.scaleOrdinal()
-            .range(["#ff006e","#8338ec","#3a86ff","#ffbe0b"])
+        // vis.colorScale = d3.scaleOrdinal()
+        //     .range(["#ff006e","#8338ec","#3a86ff","#ffbe0b"])
+        vis.mainColorScale = d3.scaleOrdinal()
+            .range(["#0c6ae6", "#d5d5d5"])
+            .domain(['TRUE','FALSE'])
+
+        console.log(vis.mainColorScale('FALSE'))
 
         vis.colorScale = d3.scaleOrdinal()
             .range(["#0ef3a0","#d5d5d5","#d5d5d5", "#d5d5d5"])
+
+        vis.colorScaleSeq = d3.scaleSequential()
+            // .interpolator(["#f7fcf0","#e0f3db","#ccebc5","#a8ddb5","#7bccc4","#4eb3d3","#2b8cbe","#08589e"])
+            .interpolator(d3.interpolateYlGnBu)
+            //GnBu, PuBu
+            // .range(["#f7fcfd","#f6fbfd","#f6fbfc","#f5fafc","#f4fafc","#f3f9fc","#f3f9fb","#f2f8fb","#f1f8fb","#f0f7fa","#f0f7fa","#eff6fa","#eef6fa","#eef5f9","#edf5f9","#ecf4f9","#ebf4f8","#eaf3f8","#eaf3f8","#e9f2f7","#e8f2f7","#e7f1f7","#e7f0f7","#e6f0f6","#e5eff6","#e4eff6","#e3eef5","#e3eef5","#e2edf5","#e1ecf4","#e0ecf4","#dfebf3","#deeaf3","#ddeaf3","#dce9f2","#dce8f2","#dbe8f2","#dae7f1","#d9e6f1","#d8e6f0","#d7e5f0","#d6e4f0","#d5e4ef","#d4e3ef","#d3e2ee","#d2e1ee","#d1e1ee","#d0e0ed","#cfdfed","#cedeec","#cddeec","#ccddec","#cbdceb","#cadbeb","#c9dbea","#c8daea","#c7d9ea","#c6d8e9","#c5d8e9","#c4d7e8","#c3d6e8","#c2d5e7","#c1d5e7","#c0d4e7","#bfd3e6","#bed2e6","#bdd2e5","#bcd1e5","#bbd0e5","#bacfe4","#b9cfe4","#b8cee3","#b7cde3","#b5cce3","#b4cce2","#b3cbe2","#b2cae1","#b1c9e1","#b0c9e1","#afc8e0","#afc7e0","#aec6df","#adc5df","#acc5de","#abc4de","#aac3de","#a9c2dd","#a8c1dd","#a7c0dc","#a6c0dc","#a5bfdb","#a4bedb","#a3bdda","#a3bcda","#a2bbd9","#a1bad9","#a0b9d8","#9fb8d8","#9fb7d7","#9eb6d7","#9db5d6","#9cb4d6","#9cb3d5","#9bb2d5","#9ab1d4","#9ab0d4","#99afd3","#98aed3","#98add2","#97acd1","#97aad1","#96a9d0","#95a8d0","#95a7cf","#94a6ce","#94a5ce","#93a3cd","#93a2cc","#92a1cc","#92a0cb","#929fcb","#919dca","#919cc9","#909bc9","#909ac8","#9098c7","#8f97c7","#8f96c6","#8f95c6","#8f93c5","#8e92c4","#8e91c4","#8e8fc3","#8e8ec2","#8e8dc2","#8d8cc1","#8d8ac0","#8d89c0","#8d88bf","#8d86be","#8d85be","#8d84bd","#8c82bc","#8c81bc","#8c80bb","#8c7eba","#8c7dba","#8c7cb9","#8c7ab9","#8c79b8","#8c78b7","#8c76b7","#8c75b6","#8c74b5","#8c72b5","#8c71b4","#8c70b3","#8b6eb3","#8b6db2","#8b6cb1","#8b6ab1","#8b69b0","#8b68af","#8b66af","#8b65ae","#8b64ae","#8b62ad","#8b61ac","#8b60ac","#8b5eab","#8a5daa","#8a5caa","#8a5aa9","#8a59a8","#8a58a8","#8a56a7","#8a55a6","#8a54a6","#8a52a5","#8951a4","#894fa3","#894ea3","#894da2","#894ba1","#894aa1","#8949a0","#88479f","#88469e","#88449d","#88439d","#88419c","#88409b","#873f9a","#873d99","#873c98","#873a98","#873997","#863796","#863695","#863494","#863393","#853192","#853091","#852f90","#852d8f","#842c8e","#842a8d","#84298c","#83278b","#83268a","#822589","#822388","#812287","#812186","#801f84","#801e83","#7f1d82","#7e1c81","#7e1a80","#7d197f","#7c187d","#7b177c","#7b167b","#7a1579","#791478","#781377","#771276","#761174","#741073","#730f72","#720f70","#710e6f","#700d6d","#6e0c6c","#6d0c6b","#6c0b69","#6a0a68","#690a66","#680965","#660863","#650862","#630760","#62075f","#60065d","#5f055c","#5d055a","#5c0459","#5a0457","#580356","#570354","#550253","#540251","#520150","#50014e","#4f004d","#4d004b"])
+
 
         // radius
         vis.radiusScale = d3.scaleLinear()
@@ -87,6 +99,7 @@ class NetworkVis {
             vis.value=d[1]
             // console.log(vis.value)
             vis.radii.push(vis.value)
+
             vis.nodes.forEach((f,i)=>{
                 f.id===vis.id ? f.value = vis.value : null
             })
@@ -95,6 +108,9 @@ class NetworkVis {
                 f.target === vis.id ? f.value = vis.value: null
             })
         })
+
+
+
 
         // catch all the nodes there weren't cited by others (e.g. main papers that aren't citations in other papers)
         vis.nodes.forEach(d=>{
@@ -118,7 +134,9 @@ class NetworkVis {
             vis.maxYear = Math.max(vis.maxYear,d.year)
         })
 
-        vis.strokeScale.domain([d3.min(vis.radii),d3.max(vis.radii)])
+        vis.colorScaleSeq.domain([d3.min(vis.radii),d3.max(vis.radii)])
+
+        // console.log(vis.colorScaleSeq(1))
 
         d3.select('#startYear').property('value', vis.minYear)
         d3.select('#endYear').property('value', vis.maxYear)
@@ -209,6 +227,8 @@ class NetworkVis {
 
         vis.radius = 7;
 
+        // vis.setColor()
+
         // vis.colorScale
         //     .domain(['Fish', 'Robot', 'Misc', 'Main'])
         // vis.colorScale
@@ -231,28 +251,23 @@ class NetworkVis {
             .force("center", d3.forceCenter( vis.width/2,  vis.height/2).strength(1))
             .force("link", d3.forceLink(vis.linksReady).id(d=>{return d.id}))
             .force("charge", d3.forceManyBody().strength(d=>d.Main==='TRUE'? -70: -1).distanceMax(600))
-            // .force('r', d3.forceRadial(d=>d.Main==='TRUE'? 500: 100))
-            // .force('x', d3.forceX().x(vis.width/2).strength(.01))
-            // .force('y', d3.forceY().y(d=>vis.heightScale(d.value)))
-            .force('collision', d3.forceCollide().radius(d=>vis.radiusScale(d.value)).strength(1))
-            // .on('tick', vis.ticked)
-
-        vis.simulation.on("tick", () => {
-            vis.link
-                .attr("x1", d=> d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-            vis.node
-                // .attr("cx",  d=>d.x)
-                .attr('cx', function(d) { return d.x = Math.max((vis.radius+1), Math.min(vis.width - (vis.radius+1), d.x))})
-                .attr("cy", function(d) { return d.y = Math.max((vis.radius+1), Math.min(vis.height - (vis.radius+1), d.y))})
-            //
-            // vis.textElems
-            //     .attr("x", d => d.x + 10)
-            //     .attr("y", d => d.y)
-            //     .attr("visibility", "hidden");
-        });
+            .force('collision', d3.forceCollide().radius(d=>vis.radiusScale(d.value)*1.02).strength(1))
+            .on("tick", () => {
+                vis.link
+                    .attr("x1", d=> d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+                vis.node
+                    // .attr("cx",  d=>d.x)
+                    .attr('cx', function(d) { return d.x = Math.max((vis.radius+1), Math.min(vis.width - (vis.radius+1), d.x))})
+                    .attr("cy", function(d) { return d.y = Math.max((vis.radius+1), Math.min(vis.height - (vis.radius+1), d.y))})
+                //
+                // vis.textElems
+                //     .attr("x", d => d.x + 10)
+                //     .attr("y", d => d.y)
+                //     .attr("visibility", "hidden");
+            });
 
 
         vis.link =  vis.svg
@@ -274,39 +289,41 @@ class NetworkVis {
         vis.node =  vis.svg
             .selectAll("circle")
             .data( vis.nodesReady)
-            .join(enter=>enter
-                .append('circle')
-                .raise()
-                .on('mouseover', function(event, d){
-                    // console.log(event)
-                    d3.select(this)
-                        // .attr('fill', 'red')
-                        .attr('stroke-width', 5)
-                        .attr('opacity', 1)
-                    vis.updateTooltip(event,d)
-                })
-                .on('mouseout', function(event, d){
-                    // console.log(d)
-                    d3.select(this)
-                        .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#d5d5d5") //"#52ff00": "#02335f") //
-                        .attr('stroke-width', 1)
-                        .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
-                    vis.removeTooltip()
-
-                })
-                // .attr("fill", color)
-                // .call(vis.drag(vis.simulation))
-                .on('mouseover.fade', vis.fade(0.1))
-                .on('mouseout.fade', vis.fade(1)),// apply a transition,
-                update=>update,
+            .join(
+                enter=>enter
+                    .append('circle')
+                    .raise()
+                    .attr('fill',d=>vis.setColor(d))
+                    .on('mouseover', function(event, d){
+                        d3.select(this)
+                            .attr("stroke", d=>d.Main==="TRUE" ? "#0ef3a0" : "#3a3a3a")
+                            .attr('stroke-width', 5)
+                            .attr('opacity', 1)
+                        vis.updateTooltip(event,d)
+                    })
+                    // .on('click', function(event, d){
+                    //     d3.select(this)
+                    //         .attr("stroke", d=>d.Main==="TRUE" ? "#0ef3a0" : "#3a3a3a")
+                    //         .attr('stroke-width', 5)
+                    //         .attr('opacity', 1)
+                    //     vis.updateTooltip(event,d)
+                    // })
+                    .on('mouseout', function(event, d){
+                        d3.select(this)
+                            .attr('fill', d=>vis.setColor(d)) //"#52ff00": "#02335f") //
+                            .attr("stroke", d=>d.Main==="TRUE" ? "#000000": "#3a3a3a")
+                            .attr('stroke-width', d=>d.Main==="TRUE" ? 3 :0.5)
+                        vis.removeTooltip()
+                    })
+                    .on('mouseover.fade', vis.fade(0.15))
+                    .on('mouseout.fade', vis.fade(1))
+                    .call(vis.drag(vis.simulation)),
+                update=>update // THE PROBLEM IS HERE. I THINK.
+                    .attr('fill',d=>vis.setColor(d)),
                 exit=>exit.remove())
             .attr("r",  d=>vis.radiusScale(d.value))
-            .attr('fill', d=>d.Main==="TRUE" ? "#0c6ae6": "#f6f6f6")
-            .attr("stroke", "#000000")
-            .attr('stroke-opacity', d=>d.Main==="TRUE" ? 1 : 0.5)
-            .attr('stroke-width', 2)
-            .attr('opacity', d=>d.Main==="TRUE" ? 1 : 0.7)
-            // .attr("z-index",d=>d.Main==="TRUE" ? 100 : -100)// control the speed of the transition
+            .attr("stroke", d=>d.Main==="TRUE" ? "#000000": "#3a3a3a")
+            .attr('stroke-width', d=>d.Main==="TRUE" ? 3 :0.5)
 
 
         // vis.textElems = vis.svg.append('g')
@@ -347,6 +364,14 @@ class NetworkVis {
             .attr('class', ' flex flex-wrap max-w-max break-all font-bold mt-4')
             .text(d.paper)
 
+        // if (d.Main==='TRUE'){
+        //
+        //     vis.toolTipCB
+        //         .append('text')
+        //         .attr('class', 'font-normal underline')
+        //         .text('Total Citations: ' + d.value)
+        // }
+
         vis.toolTipCB.exit().remove()
 
 
@@ -372,13 +397,7 @@ class NetworkVis {
                 .text('')
         }
 
-        if (d.Main==='TRUE'){
 
-            vis.toolTipCB
-                .append('text')
-                .attr('class', 'font-normal underline')
-            // .text('Total Citations: ' + )
-        }
 
 
             // .append('li')
@@ -391,6 +410,25 @@ class NetworkVis {
             //     `
             // }))
 
+    }
+
+    setColor(node){
+        let vis = this
+        console.log(document.getElementById('toggleColor').value)
+
+        // vis.svg.selectAll("circle")
+        //     .transition()
+        //     .duration(2000)
+        //     .attr("fill", d=>document.getElementById('toggleColor').value ? vis.colorScaleSeq(d.value): vis.mainColorScale(d.Main))
+        // if (document.getElementById('toggleColor').value){
+        //
+        // } else {
+        //
+        // }
+
+
+
+        return document.getElementById('toggleColor').value==='true' ?  vis.mainColorScale(node.Main): vis.colorScaleSeq(node.value)
     }
 
     removeTooltip(){
@@ -409,14 +447,16 @@ class NetworkVis {
         let vis = this;
         return (event,d)=> {
             vis.node.style('opacity', function (o) { return vis.isConnected(d, o) ? 1 : opacity });
+            // vis.node.style('stroke', function (o) { return vis.isConnected(d, o) ? '#fa0404' : '#2e2e2e' });
             // vis.textElems.style('visibility', function (o) { return vis.isConnected(d, o) ? "visible" : "hidden" });
             vis.link.style('stroke-opacity', o => (o.source === d || o.target === d ? 1 : opacity));
             vis.link.style('stroke-width', o => (o.source === d || o.target === d ? 3 : 0.5));
             if(opacity === 1){
-                vis.node.style('opacity', d=>d.Main==='TRUE'? 1: 0.7)
+                vis.node.style('opacity', 1)
                 // vis.textElems.style('visibility', 'hidden')
                 vis.link.style('stroke-opacity', 0.3)
-                vis.link.style('stroke-width',1)
+                vis.link.style('stroke-width',d=>d.Main ==='TRUE'?3:0.5)
+                // vis.link.style("stroke", d=>d.Main==="TRUE" ? "#000000": "#3a3a3a")
 
 
             }
@@ -429,29 +469,29 @@ class NetworkVis {
         return vis.linkedByIndex[`${a.index},${b.index}`] || vis.linkedByIndex[`${b.index},${a.index}`] || a.index === b.index;
     }
 
-    // drag(simulation){
-    //     function dragstarted(event) {
-    //         // if (!event.active) simulation.alphaTarget(0.3).restart();
-    //         event.subject.fx = event.subject.x;
-    //         event.subject.fy = event.subject.y;
-    //     }
-    //
-    //     function dragged(event) {
-    //         event.subject.fx = event.x;
-    //         event.subject.fy = event.y;
-    //     }
-    //
-    //     function dragended(event) {
-    //         // if (!event.active) simulation.alphaTarget(0.3).restart();
-    //         event.subject.fx = null;
-    //         event.subject.fy = null;
-    //     }
-    //
-    //     return d3.drag()
-    //         .on("start", dragstarted)
-    //         .on("drag", dragged)
-    //         .on("end", dragended);
-    // }
+    drag(simulation){
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.01).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0.01).restart();
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+
+        return d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended);
+    }
 
     // ticked(){
     //     let vis = this
